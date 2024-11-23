@@ -1,0 +1,89 @@
+# Typography in Themes
+
+## Base Components
+
+Use the **Text** and **Heading** components to render titles and body copy. These components share `size` and `weight` props and map to the underlying type system to ensure consistent typography throughout your app.
+
+---
+
+## Typographic Principles
+
+The goal of typography is to relate font size, line height, and line width in a proportional way that maximizes beauty and makes reading easier and more pleasant.
+
+```jsx
+<Heading mb="2" size="4">Typographic principles</Heading>
+<Text>
+  The goal of typography is to relate font size, line height, and line width in a proportional way that maximizes beauty and makes reading easier and more pleasant.
+</Text>
+```
+
+---
+
+## Formatting Components
+
+You can compose formatting components to add emphasis, signal importance, present code, and more.
+
+Example:
+
+```jsx
+<Text>
+  The <Em>most</Em> important thing to remember is,{" "}
+  <Strong>stay positive</Strong>.
+</Text>
+```
+
+Output:
+_The most important thing to remember is, **stay positive**._
+
+---
+
+## Type Scale
+
+The typographic system is based on a **9-step size scale**. Each step includes values for font size, line height, and letter spacing, designed to work in harmony.
+
+```jsx
+<Text size="6">The quick brown fox jumps over the lazy dog.</Text>
+```
+
+### Type Scale Steps
+
+Step 1: Size 12px, Letter Spacing 0.0025em, Line Height 16px
+Step 2: Size 14px, Letter Spacing 0em, Line Height 20px
+Step 3: Size 16px, Letter Spacing 0em, Line Height 24px
+Step 4: Size 18px, Letter Spacing -0.0025em, Line Height 26px
+Step 5: Size 20px, Letter Spacing -0.005em, Line Height 28px
+Step 6: Size 24px, Letter Spacing -0.00625em, Line Height 30px
+Step 7: Size 28px, Letter Spacing -0.0075em, Line Height 36px
+Step 8: Size 35px, Letter Spacing -0.01em, Line Height 40px
+Step 9: Size 60px, Letter Spacing -0.025em, Line Height 60px
+
+---
+
+## Font Weight
+
+The typography system supports the following weights. These can be customized to map to your typeface.
+
+- **Light**
+- **Regular**
+- **Medium**
+- **Bold**
+
+### Example
+
+```jsx
+<Text size="6">
+  <Flex direction="column">
+    <Text weight="light">Light</Text>
+    <Text weight="regular">Regular</Text>
+    <Text weight="medium">Medium</Text>
+    <Text weight="bold">Bold</Text>
+  </Flex>
+</Text>
+```
+
+### Default Font Weights
+
+- Light: 300
+- Regular: 400
+- Medium: 500
+- Bold: 700
