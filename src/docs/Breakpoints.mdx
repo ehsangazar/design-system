@@ -1,0 +1,42 @@
+# Breakpoints in Radix Themes
+
+Radix Themes provides built-in **breakpoints** to easily create adaptive layouts for different screen sizes.
+
+## Available Sizes
+
+Each breakpoint corresponds to a fixed screen width. Breakpoints are **min-width based**, meaning they apply when the screen width is equal to or greater than the specified value.
+
+- **initial**: 0px (Phones - portrait)
+- **xs**: 520px (Phones - landscape)
+- **sm**: 768px (Tablets - portrait)
+- **md**: 1024px (Tablets - landscape)
+- **lg**: 1280px (Laptops)
+- **xl**: 1640px (Desktops)
+
+---
+
+## Usage
+
+Most component size and layout props accept a **Responsive object** to modify the given prop across different breakpoints.
+
+### Example
+
+You can define component sizes for different screen sizes by passing an object with breakpoint keys and corresponding values:
+
+```jsx
+<Heading
+  size={{
+    initial: "3", // For phones (portrait)
+    md: "5", // For tablets (landscape)
+    xl: "7", // For desktops
+  }}
+/>
+```
+
+In this example:
+
+- The `Heading` size will be `"3"` on phones (portrait).
+- The `Heading` size will change to `"5"` on tablets (landscape).
+- The `Heading` size will be `"7"` on desktops (larger screens).
+
+This approach ensures a responsive design that adapts to varying screen sizes.
