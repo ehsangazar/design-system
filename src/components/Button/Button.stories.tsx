@@ -8,7 +8,7 @@ export default {
   component: Button,
 };
 
-export const ButtonStory = () => (
+export const ButtonShowcase = () => (
   <Flex direction="column" gap="6">
     {/* Size variations */}
     <Flex gap="3" align="center">
