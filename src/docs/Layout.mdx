@@ -1,0 +1,226 @@
+# Layout Components Documentation
+
+Welcome to the **Layout Components** guide! These components are designed to help you separate layout responsibilities from content and interactivity, providing a maintainable and easy-to-understand structure for your application. Let's explore their features and usage.
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Layout Components](#layout-components)
+   - [Box](#box)
+   - [Flex](#flex)
+   - [Grid](#grid)
+   - [Section](#section)
+   - [Container](#container)
+3. [Common Layout Props](#common-layout-props)
+   - [Padding](#padding)
+   - [Width](#width)
+   - [Height](#height)
+   - [Positioning](#positioning)
+4. [Flex and Grid Children](#flex-and-grid-children)
+   - [Flex Children](#flex-children)
+   - [Grid Children](#grid-children)
+5. [Margin Props](#margin-props)
+6. [Standalone Usage](#standalone-usage)
+
+---
+
+## Introduction
+
+**Layout components** are essential tools for building responsive, maintainable user interfaces. By separating layout concerns from content, these components:
+
+- Enhance app maintainability.
+- Simplify reasoning about your UI.
+- Ensure consistent styling across your application.
+
+---
+
+## Layout Components
+
+### Box
+
+The most fundamental layout component, `Box`, provides:
+
+- **Spacing** for child elements.
+- **Sizing constraints** for content.
+- **Flex and grid container behavior control.**
+- **Responsive display** for hiding content based on screen size.
+
+```jsx
+<Box p="4" width="100px" height="200px" display={{ sm: "none", lg: "block" }} />
+```
+
+---
+
+### Flex
+
+Building on `Box`, the `Flex` component organizes items along an axis, providing access to CSS flexbox properties for:
+
+- Alignment
+- Justification
+- Direction
+
+```jsx
+<Flex justify="center" align="center" flexDirection="row" gap="4">
+  <Box>Child 1</Box>
+  <Box>Child 2</Box>
+</Flex>
+```
+
+---
+
+### Grid
+
+The `Grid` component creates flexible column and row layouts with CSS grid properties.
+
+```jsx
+<Grid templateColumns="repeat(3, 1fr)" gap="4">
+  <Box>1</Box>
+  <Box>2</Box>
+  <Box>3</Box>
+</Grid>
+```
+
+---
+
+### Section
+
+`Section` ensures consistent vertical spacing between larger parts of your page content.
+
+```jsx
+<Section size="lg">
+  <Box>Content inside a section</Box>
+</Section>
+```
+
+---
+
+### Container
+
+`Container` wraps content with a consistent max-width for comfortable reading. It supports predefined sizes and responsive breakpoints.
+
+```jsx
+<Container maxWidth="lg">
+  <Box>Wrapped content</Box>
+</Container>
+```
+
+---
+
+## Common Layout Props
+
+### Padding
+
+Control the inner spacing of components with responsive padding props.
+
+```jsx
+<Box p="4" px={{ sm: "6", lg: "9" }} py="8" />
+```
+
+| Prop | Type                         | Default |
+| ---- | ---------------------------- | ------- |
+| `p`  | Responsive\<enum or string\> | None    |
+| `px` | Responsive\<enum or string\> | None    |
+| `py` | Responsive\<enum or string\> | None    |
+
+---
+
+### Width
+
+Set the width of components using any valid CSS width value.
+
+```jsx
+<Box width="100px" width={{ md: "100vw", xl: "1400px" }} />
+```
+
+| Prop       | Type                 | Default |
+| ---------- | -------------------- | ------- |
+| `width`    | Responsive\<string\> | None    |
+| `minWidth` | Responsive\<string\> | None    |
+| `maxWidth` | Responsive\<string\> | None    |
+
+---
+
+### Height
+
+Define the height of components, just like the width props.
+
+```jsx
+<Box height="200px" height={{ lg: "100vh" }} />
+```
+
+---
+
+### Positioning
+
+Adjust element positioning within the document flow.
+
+```jsx
+<Box position="relative" inset="4" top={{ sm: "0", lg: "auto" }} />
+```
+
+| Prop       | Type                         | Default |
+| ---------- | ---------------------------- | ------- |
+| `position` | Responsive\<enum\>           | None    |
+| `inset`    | Responsive\<enum or string\> | None    |
+
+---
+
+## Flex and Grid Children
+
+### Flex Children
+
+Customize styles for components as flex container children.
+
+```jsx
+<Box flexBasis="100%" flexGrow="1" flexShrink="0" />
+```
+
+| Prop         | Type                         | Default |
+| ------------ | ---------------------------- | ------- |
+| `flexBasis`  | Responsive\<string\>         | None    |
+| `flexGrow`   | Responsive\<enum or string\> | None    |
+| `flexShrink` | Responsive\<enum or string\> | None    |
+
+---
+
+### Grid Children
+
+Control how elements behave within a grid container.
+
+```jsx
+<Box gridColumn="1 / 3" gridRowStart="2" />
+```
+
+---
+
+## Margin Props
+
+Add spacing around elements with margin props.
+
+```jsx
+<Button m="4" mx={{ sm: "6", lg: "9" }} />
+```
+
+| Prop | Type                         | Default |
+| ---- | ---------------------------- | ------- |
+| `m`  | Responsive\<enum or string\> | None    |
+| `mx` | Responsive\<enum or string\> | None    |
+| `my` | Responsive\<enum or string\> | None    |
+
+---
+
+## Standalone Usage
+
+To use layout components independently, ensure tree-shaking is enabled and import the required CSS:
+
+```javascript
+import "@radix-ui/themes/layout.css";
+```
+
+Wrap your app with a `Theme` provider to enable these features.
+
+---
+
+Enhance your layouts with these robust and easy-to-use components! 🎨
