@@ -1,3 +1,4 @@
 .radix-themes {
-    min-height: auto !important;
+    min-height: auto;
+    background: none;
 }
