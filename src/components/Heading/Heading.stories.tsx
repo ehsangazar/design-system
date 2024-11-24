@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Heading from "./Heading";
+import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Heading> = {
   title: "Typography/Heading",
@@ -7,67 +8,91 @@ const meta: Meta<typeof Heading> = {
   args: {
     children: "Hello World",
   },
+  argTypes: {
+    as: {
+      control: "select",
+      options: ["h1", "h2", "h3", "h4", "h5", "h6"],
+    },
+    size: {
+      control: "select",
+      options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    },
+    weight: {
+      control: "select",
+      options: ["light", "regular", "medium", "bold"],
+    },
+    align: {
+      control: "select",
+      options: ["left", "center", "right"],
+    },
+    trim: {
+      control: "select",
+      options: ["normal", "start", "end", "both"],
+    },
+    truncate: {
+      control: "boolean",
+    },
+    wrap: {
+      control: "select",
+      options: ["wrap", "nowrap", "pretty", "balance"],
+    },
+    color: {
+      control: "select",
+      options: COLORS,
+    },
+    highContrast: {
+      control: "boolean",
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof Heading>;
 
-export const HeadingShowcase: Story = {
-  render: () => (
-    <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-      {/* Sizes */}
-      <div>
-        <Heading size="6" weight="bold" color="blue">
-          Sizes
-        </Heading>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Heading size="1">Size 1</Heading>
-          <Heading size="2">Size 2</Heading>
-          <Heading size="3">Size 3</Heading>
-          <Heading size="4">Size 4</Heading>
-          <Heading size="5">Size 5</Heading>
-          <Heading size="6">Size 6</Heading>
-        </div>
-      </div>
+export const Default: Story = {
+  args: {
+    children: "Hello World",
+  },
+};
 
-      {/* Weights */}
-      <div>
-        <Heading size="6" weight="bold" color="blue">
-          Weights
-        </Heading>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Heading weight="light">Light weight</Heading>
-          <Heading weight="regular">Regular weight</Heading>
-          <Heading weight="medium">Medium weight</Heading>
-          <Heading weight="bold">Bold weight</Heading>
-        </div>
-      </div>
+export const H1: Story = {
+  args: {
+    as: "h1",
+    children: "Heading 1",
+  },
+};
 
-      {/* Colors */}
-      <div>
-        <Heading size="6" weight="bold" color="blue">
-          Colors
-        </Heading>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Heading color="gray">Gray heading</Heading>
-          <Heading color="tomato">Tomato heading</Heading>
-          <Heading color="red">Red heading</Heading>
-          <Heading color="blue">Blue heading</Heading>
-          <Heading highContrast>High contrast heading</Heading>
-        </div>
-      </div>
+export const H2: Story = {
+  args: {
+    as: "h2",
+    children: "Heading 2",
+  },
+};
 
-      {/* Alignment */}
-      <div>
-        <Heading size="6" weight="bold" color="blue">
-          Alignment
-        </Heading>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Heading align="left">Left aligned</Heading>
-          <Heading align="center">Center aligned</Heading>
-          <Heading align="right">Right aligned</Heading>
-        </div>
-      </div>
-    </div>
-  ),
+export const H3: Story = {
+  args: {
+    as: "h3",
+    children: "Heading 3",
+  },
+};
+
+export const H4: Story = {
+  args: {
+    as: "h4",
+    children: "Heading 4",
+  },
+};
+
+export const H5: Story = {
+  args: {
+    as: "h5",
+    children: "Heading 5",
+  },
+};
+
+export const H6: Story = {
+  args: {
+    as: "h6",
+    children: "Heading 6",
+  },
 };

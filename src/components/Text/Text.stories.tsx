@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Text from "./Text";
+import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Text> = {
   title: "Typography/Text",
@@ -37,34 +38,7 @@ const meta: Meta<typeof Text> = {
     },
     color: {
       control: "select",
-      options: [
-        "gray",
-        "gold",
-        "bronze",
-        "brown",
-        "yellow",
-        "amber",
-        "orange",
-        "tomato",
-        "red",
-        "ruby",
-        "crimson",
-        "pink",
-        "plum",
-        "purple",
-        "violet",
-        "iris",
-        "indigo",
-        "blue",
-        "cyan",
-        "teal",
-        "jade",
-        "green",
-        "grass",
-        "lime",
-        "mint",
-        "sky",
-      ],
+      options: COLORS,
     },
     highContrast: {
       control: "boolean",
