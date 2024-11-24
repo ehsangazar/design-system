@@ -25,6 +25,9 @@ const meta: Meta<typeof Checkbox> = {
     highContrast: {
       control: "boolean",
     },
+    checked: {
+      control: "boolean",
+    },
   },
 };
 
