@@ -2,7 +2,8 @@ import { Meta, StoryObj } from "@storybook/react";
 import AlertDialog from "./AlertDialog";
 import Button from "../Button/Button";
 import Flex from "../Flex/Flex";
-import { expect } from "@storybook/test";
+import { within } from "@testing-library/react";
+import { expect, jest } from "@storybook/jest";
 
 interface AlertDialogContent {
   align?: "start" | "center";
@@ -14,6 +15,9 @@ interface AlertDialogContent {
   minHeight?: string;
   maxHeight?: string;
 }
+
+const mockClickSuccessHandler = jest.fn();
+const mockClickCancelHandler = jest.fn();
 
 const AlertDialogDemo = (props: AlertDialogContent) => {
   return (
@@ -30,12 +34,22 @@ const AlertDialogDemo = (props: AlertDialogContent) => {
 
         <Flex gap="3" mt="4" justify="end">
           <AlertDialog.Cancel>
-            <Button variant="soft" color="gray">
+            <Button
+              data-testid="button-cancel"
+              variant="soft"
+              color="gray"
+              onClick={mockClickCancelHandler}
+            >
               Cancel
             </Button>
           </AlertDialog.Cancel>
           <AlertDialog.Action>
-            <Button variant="solid" color="red">
+            <Button
+              data-testid="button-action"
+              variant="solid"
+              color="red"
+              onClick={mockClickSuccessHandler}
+            >
               Revoke access
             </Button>
           </AlertDialog.Action>
@@ -85,24 +99,27 @@ export const Default: Story = {
   args: {},
 
   play: async ({ canvasElement }) => {
-    const triggerButton = (await canvasElement.querySelector(
-      "button"
-    )) as HTMLButtonElement;
-    triggerButton?.click();
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button");
+    button.click();
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    const cancelButton = (await canvasElement.querySelector(
-      "button:last-child"
-    )) as HTMLButtonElement;
+    const actionButton = document.querySelector(
+      "[data-testid='button-action']"
+    ) as HTMLElement;
+    actionButton?.click();
+
+    expect(mockClickSuccessHandler).toHaveBeenCalled();
+
+    button.click();
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    const cancelButton = document.querySelector(
+      "[data-testid='button-cancel']"
+    ) as HTMLElement;
+
     cancelButton?.click();
 
-    expect(canvasElement).not.toBeNull();
-
-    triggerButton?.click();
-
-    const actionButton = (await canvasElement.querySelector(
-      "button:last-child"
-    )) as HTMLButtonElement;
-
-    actionButton?.click();
+    expect(mockClickCancelHandler).toHaveBeenCalled();
   },
 };

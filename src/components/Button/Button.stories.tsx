@@ -3,6 +3,7 @@ import Button from "./Button";
 import { COLORS } from "../../constants/COLORS";
 import { expect } from "@storybook/test";
 import { jest } from "@storybook/jest";
+import { within } from "@testing-library/react";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -55,7 +56,8 @@ export const Default: Story = {
     onClick: mockClickHandler,
   },
   play: async ({ canvasElement }) => {
-    const button = canvasElement.querySelector("button");
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button");
     button?.click();
     await new Promise((resolve) => setTimeout(resolve, 1000));
     expect(mockClickHandler).toHaveBeenCalled();
