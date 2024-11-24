@@ -1,0 +1,92 @@
+# Flex Component in Radix Themes
+
+The `Flex` component provides a powerful and customizable way to create flexbox-based layouts. It is built on the `<div>` element and supports common layout and margin props.
+
+---
+
+## Example Usage
+
+```jsx
+<Flex gap="3">
+  <Box width="64px" height="64px">
+    <DecorativeBox />
+  </Box>
+  <Box width="64px" height="64px">
+    <DecorativeBox />
+  </Box>
+  <Box width="64px" height="64px">
+    <DecorativeBox />
+  </Box>
+  <Box width="64px" height="64px">
+    <DecorativeBox />
+  </Box>
+  <Box width="64px" height="64px">
+    <DecorativeBox />
+  </Box>
+</Flex>
+```
+
+---
+
+## API Reference
+
+### Unique Props
+
+- **`as`**: Defines the HTML element to render. Options include `"div"` or `"span"`. Defaults to `"div"`.
+- **`asChild`**: If `true`, renders a child component instead of the wrapper element.
+- **`display`**: Controls the CSS `display` property. Options include `"none"`, `"inline-flex"`, or `"flex"`.
+
+### Flex-Specific Props
+
+- **`direction`**: Sets the `flex-direction` property. Accepts responsive values like `"row"`, `"column"`, etc.
+- **`align`**: Controls `align-items`. Examples include `"start"`, `"center"`, or `"end"`.
+- **`justify`**: Controls `justify-content`. Options include `"start"`, `"center"`, `"end"`, or `"between"`.
+- **`wrap`**: Sets the `flex-wrap` property. Accepts values like `"nowrap"`, `"wrap"`, or `"wrap-reverse"`.
+- **`gap`**: Defines spacing between flex items. Can be responsive.
+- **`gapX`**: Controls horizontal spacing.
+- **`gapY`**: Controls vertical spacing.
+
+---
+
+## Shared Props
+
+The `Flex` component shares many layout properties with `Box`, `Grid`, `Container`, and `Section`. These include spacing, sizing, positioning, and overflow control.
+
+### Spacing Props
+
+- **Padding**: Props such as `p`, `px`, `py`, `pt`, `pr`, `pb`, and `pl` control padding for all or specific sides.
+
+### Size Props
+
+- **Width and Height**: Use `width`, `minWidth`, `maxWidth`, `height`, `minHeight`, and `maxHeight` to define dimensions.
+
+### Positioning Props
+
+- **Position**: Set with the `position` prop.
+- **Offsets**: Use `inset`, `top`, `right`, `bottom`, and `left` for precise positioning.
+
+### Overflow Props
+
+- Control content overflow with `overflow`, `overflowX`, and `overflowY`.
+
+### Flexbox Props
+
+- **`flexBasis`**: Defines the base size of a flex item.
+- **`flexShrink` and `flexGrow`**: Control how flex items resize within the container.
+
+### Grid Props
+
+Although not commonly used with `Flex`, grid-related props like `gridArea`, `gridColumn`, and `gridRow` are available for specific use cases.
+
+---
+
+## Notes
+
+- **Responsive Design**: Most props accept responsive values to adapt to different screen sizes.
+- **Custom Layouts**: Combine `Flex` with other components to build intricate and flexible layouts.
+
+Check the **Layout** section for more details on related components and advanced techniques.
+
+```
+
+```

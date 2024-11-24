@@ -1,0 +1,79 @@
+# Radius in Radix Themes
+
+Radix Themes uses a **radius scale** for styling rounded corners across components. Some components allow you to override the default radius factor using the `radius` prop.
+
+---
+
+## Radius Prop
+
+Certain components, like `Button`, allow customization of corner radius by setting the `radius` prop. Options include:
+
+- **none**: No rounding.
+- **small**: Slightly rounded corners.
+- **medium**: Moderately rounded corners.
+- **large**: Significantly rounded corners.
+- **full**: Fully rounded (e.g., pill shape).
+
+### Example
+
+```jsx
+<Flex align="center" gap="3">
+  <Button radius="none">Save</Button>
+  <Button radius="small">Save</Button>
+  <Button radius="medium">Save</Button>
+  <Button radius="large">Save</Button>
+  <Button radius="full">Save</Button>
+</Flex>
+```
+
+---
+
+## Components Without Radius Prop
+
+Some components, such as `Card`, `Dialog`, and `Popover`, do not have a `radius` prop. Instead, they inherit the radius setting from the theme.
+
+Similarly, most text-based components do not support the `radius` prop.
+
+---
+
+## Radius Scale
+
+Radius values are derived from a **6-step scale**:
+
+- **Step 1**: Smallest radius
+- **Step 6**: Largest radius
+
+Although you cannot apply a specific step directly using the `radius` prop, you can reference these values when styling custom components.
+
+---
+
+## Radius Tokens
+
+CSS variables are available to access radius values and maintain consistency throughout your theme.
+
+```css
+/* Radius values */
+var(--radius-1); /* Smallest radius */
+var(--radius-2);
+var(--radius-3);
+var(--radius-4);
+var(--radius-5);
+var(--radius-6); /* Largest radius */
+
+/* Theme radius multiplier */
+var(--radius-factor);
+
+/* Fully rounded radius */
+var(--radius-full);
+
+/* Radius for thumb elements */
+var(--radius-thumb);
+```
+
+### Notes:
+
+- Use `var(--radius-factor)` as a multiplier to scale the theme radius globally.
+- The `var(--radius-full)` is typically used with a `max()` function to create fully rounded elements.
+- The `var(--radius-thumb)` is intended for specific use cases, such as thumb elements in sliders.
+
+By leveraging these tokens and the radius scale, you can create visually cohesive components that adapt seamlessly to your theme.

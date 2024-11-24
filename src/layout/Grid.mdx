@@ -1,0 +1,88 @@
+# Grid Component in Radix Themes
+
+The `Grid` component is designed to help create responsive and adaptable grid layouts. It is based on the `<div>` element and supports common margin props along with specific grid-related properties.
+
+---
+
+## Example Usage
+
+### Basic Grid
+
+```jsx
+<Grid columns="3" gap="3" rows="repeat(2, 64px)" width="auto">
+  <DecorativeBox />
+  <DecorativeBox />
+  <DecorativeBox />
+  <DecorativeBox />
+  <DecorativeBox />
+  <DecorativeBox />
+</Grid>
+```
+
+### Responsive Grid
+
+```jsx
+<Grid columns={{ initial: "1", md: "2" }} gap="3" width="auto">
+  <Box height="64px">
+    <DecorativeBox />
+  </Box>
+  <Box height="64px">
+    <DecorativeBox />
+  </Box>
+</Grid>
+```
+
+---
+
+## API Reference
+
+### Unique Props
+
+- **`as`**: Specifies the rendered HTML element. Options are `"div"` or `"span"`. Defaults to `"div"`.
+- **`asChild`**: If `true`, renders a child component instead of the wrapper element.
+- **`display`**: Controls the CSS `display` property. Options include `"none"`, `"inline-grid"`, or `"grid"`.
+- **`areas`**: Defines the `grid-template-areas` for named grid regions.
+- **`columns`**: Sets the `grid-template-columns` property. Accepts responsive values like `"1fr 1fr"`, `"repeat(3, auto)"`, etc.
+- **`rows`**: Sets the `grid-template-rows` property. Accepts responsive values like `"1fr"`, `"repeat(2, 64px)"`, etc.
+- **`flow`**: Controls the `grid-auto-flow` property, determining how elements are placed in the grid.
+- **`align`**: Sets the `align-items` property. Accepts values like `"start"`, `"center"`, or `"end"`.
+- **`justify`**: Controls the `justify-content` property. Options include `"start"`, `"center"`, `"end"`, or `"between"`.
+- **`gap`**: Defines the spacing between grid items.
+- **`gapX`**: Sets horizontal spacing between items.
+- **`gapY`**: Sets vertical spacing between items.
+
+---
+
+## Shared Props
+
+The `Grid` component shares many properties with `Box`, `Flex`, `Container`, and `Section`. These include:
+
+### Spacing Props
+
+- **Padding**: Use `p`, `px`, `py`, `pt`, `pr`, `pb`, and `pl` to set padding.
+
+### Size Props
+
+- **Dimensions**: Use `width`, `minWidth`, `maxWidth`, `height`, `minHeight`, and `maxHeight` to control size.
+
+### Positioning Props
+
+- **Position**: Set with the `position` prop.
+- **Offsets**: Use `inset`, `top`, `right`, `bottom`, and `left` for precise positioning.
+
+### Overflow Props
+
+- **Overflow Control**: Use `overflow`, `overflowX`, and `overflowY` to manage content overflow.
+
+### Additional Grid Props
+
+- **`gridArea`**: Assigns a named area to a grid item.
+- **`gridColumn`**: Specifies a grid column for an item to span.
+- **`gridRow`**: Specifies a grid row for an item to span.
+
+---
+
+## Notes
+
+- **Responsive Design**: Most props support responsive values to adjust layouts across breakpoints.
+- **Custom Layouts**: Combine `Grid` with other layout components like `Box` and `Flex` to build complex layouts.

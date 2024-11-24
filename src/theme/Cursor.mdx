@@ -1,0 +1,56 @@
+# Cursors in Radix Themes
+
+Radix Themes provides options for customizing cursors used on interactive elements to enhance the user experience.
+
+---
+
+## Default Cursors
+
+### Interactive Elements:
+
+- By default, interactive elements (e.g., buttons, switches, links) use the **arrow cursor**.
+- This aligns with browser defaults for interactive behavior.
+
+### Disabled Elements:
+
+- Disabled elements explicitly use a **disabled cursor** to indicate they are non-functional.
+
+---
+
+## Example Usage
+
+Below is an example of different interactive elements and their cursor behaviors:
+
+```jsx
+<Flex align="center" gap="4" wrap="wrap">
+  <Flex align="center" gap="3" wrap="wrap">
+    <Button>Button</Button>
+    <Button asChild>
+      <a href="#">Link</a>
+    </Button>
+    <Button disabled>Disabled</Button>
+  </Flex>
+  <Button variant="ghost">Ghost button</Button>
+  <Link href="#" size="2">
+    Link
+  </Link>
+  <Checkbox defaultChecked />
+  <Switch defaultChecked />
+  <Switch defaultChecked disabled />
+</Flex>
+```
+
+---
+
+### Cursor Behavior:
+
+1. **Button**: Default cursor.
+2. **Link (inside Button)**: Uses the standard pointer cursor.
+3. **Disabled Button**: Displays the disabled cursor.
+4. **Ghost Button**: Follows the default cursor style.
+5. **Standalone Link**: Pointer cursor for hyperlinks.
+6. **Checkbox and Switch**: Changes cursor based on their interactive state:
+   - Checked or enabled: Default cursor.
+   - Disabled: Disabled cursor.
+
+This system ensures a clear and consistent user experience for interactive elements throughout your application.

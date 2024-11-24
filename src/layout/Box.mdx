@@ -1,0 +1,66 @@
+# Box Component in Radix Themes
+
+The `Box` component is a fundamental building block for layouts. It is based on the standard `<div>` element and supports various layout and spacing properties.
+
+---
+
+## Example Usage
+
+```jsx
+<Box width="64px" height="64px">
+  <DecorativeBox />
+</Box>
+```
+
+---
+
+## API Reference
+
+### Unique Props
+
+- **`as`**: Determines the HTML element to render. Options are `"div"` or `"span"`. Defaults to `"div"`.
+- **`asChild`**: If `true`, renders a child component instead of a wrapper element.
+- **`display`**: Controls the CSS `display` property. Accepts responsive values such as `"none"`, `"inline"`, `"inline-block"`, or `"block"`.
+
+---
+
+## Shared Props
+
+The `Box` component shares many props with other layout components, including `Flex`, `Grid`, `Container`, and `Section`. These props enable customization of spacing, sizing, and positioning.
+
+### Spacing Props
+
+- `p`, `px`, `py`, `pt`, `pr`, `pb`, `pl`: Manage padding for all sides or specific sides (e.g., `px` for horizontal padding).
+
+### Size Props
+
+- `width`, `minWidth`, `maxWidth`: Define width and width constraints.
+- `height`, `minHeight`, `maxHeight`: Define height and height constraints.
+
+### Positioning Props
+
+- `position`: Sets the CSS `position` property.
+- `inset`, `top`, `right`, `bottom`, `left`: Controls positioning of the element.
+
+### Overflow Props
+
+- `overflow`, `overflowX`, `overflowY`: Handles content overflow within the element.
+
+### Flexbox Props
+
+- `flexBasis`: Sets the base size of a flex item.
+- `flexShrink` and `flexGrow`: Control how a flex item resizes.
+
+### Grid Props
+
+- `gridArea`: Defines the grid area of the element.
+- `gridColumn`, `gridColumnStart`, `gridColumnEnd`: Control the placement of grid columns.
+- `gridRow`, `gridRowStart`, `gridRowEnd`: Control the placement of grid rows.
+
+---
+
+## Notes
+
+- **Responsive Values**: Most props support responsive settings to adapt to various screen sizes.
+- **Flexible Design**: Combine `Box` with other layout components for building intricate layouts.
+- Check the **Layout** section for more insights on related components and advanced layout techniques.
