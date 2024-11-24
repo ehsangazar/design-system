@@ -3,6 +3,8 @@ import Checkbox from "./Checkbox";
 import { COLORS } from "../../constants/COLORS";
 import Text from "../Text/Text";
 import Flex from "../Flex/Flex";
+import { within } from "@testing-library/react";
+import { expect } from "@storybook/jest";
 
 const meta: Meta<typeof Checkbox> = {
   title: "Forms/Checkbox",
@@ -43,6 +45,21 @@ export const Default: Story = {
       </Flex>
     </Text>
   ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    const checkbox = canvas.getByRole("checkbox");
+    expect(checkbox).toBeInTheDocument();
+
+    const label = canvas.getByText("Agree to Terms and Conditions");
+    expect(label).toBeInTheDocument();
+
+    checkbox.click();
+
+    await new Promise((r) => setTimeout(r, 1000));
+
+    expect(checkbox).toHaveAttribute("data-state", "checked");
+  },
 };
 
 export const Surface: Story = {
