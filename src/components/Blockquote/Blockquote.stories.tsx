@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Blockquote from "./Blockquote";
-import { COLORS } from "../../constants/colors";
+import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Blockquote> = {
   component: Blockquote,

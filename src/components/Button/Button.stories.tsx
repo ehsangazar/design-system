@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
-import { COLORS } from "../../constants/colors";
+import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Button> = {
   component: Button,
