@@ -46,6 +46,7 @@ export const Default: Story = {
     children: "Code",
   },
 };
+
 export const Large: Story = {
   args: {
     children: "Large Code",
