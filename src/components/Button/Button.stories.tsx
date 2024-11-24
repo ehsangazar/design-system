@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
 import { COLORS } from "../../constants/COLORS";
+import { expect } from "@storybook/test";
+import { jest } from "@storybook/jest";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -46,14 +48,17 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+const mockClickHandler = jest.fn();
 export const Default: Story = {
   args: {
     children: "Button",
+    onClick: mockClickHandler,
   },
   play: async ({ canvasElement }) => {
     const button = canvasElement.querySelector("button");
     button?.click();
     await new Promise((resolve) => setTimeout(resolve, 1000));
+    expect(mockClickHandler).toHaveBeenCalled();
   },
 };
 
