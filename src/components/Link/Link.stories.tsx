@@ -50,6 +50,7 @@ export const Default: Story = {
     children: "Link",
   },
 };
+
 export const LargeBoldLink: Story = {
   args: {
     children: "Large Bold Link",
