@@ -66,7 +66,7 @@ const CheckboxGroupDemo = (props: CheckboxGroupContent) => {
 };
 
 const meta: Meta<typeof CheckboxGroupDemo> = {
-  title: "Forms/CheckboxGroup",
+  title: "Components/CheckboxGroup",
   component: CheckboxGroupDemo,
   argTypes: {
     size: {

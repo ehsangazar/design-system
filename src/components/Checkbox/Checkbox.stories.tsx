@@ -7,7 +7,7 @@ import { within } from "@testing-library/react";
 import { expect } from "@storybook/jest";
 
 const meta: Meta<typeof Checkbox> = {
-  title: "Forms/Checkbox",
+  title: "Components/Checkbox",
   component: Checkbox,
   argTypes: {
     size: {
