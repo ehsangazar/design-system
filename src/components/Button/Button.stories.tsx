@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
+import { COLORS } from "../../constants/colors";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -27,34 +28,7 @@ const meta: Meta<typeof Button> = {
     },
     color: {
       control: "select",
-      options: [
-        "gray",
-        "gold",
-        "bronze",
-        "brown",
-        "yellow",
-        "amber",
-        "orange",
-        "tomato",
-        "red",
-        "ruby",
-        "crimson",
-        "pink",
-        "plum",
-        "purple",
-        "violet",
-        "iris",
-        "indigo",
-        "blue",
-        "cyan",
-        "teal",
-        "jade",
-        "green",
-        "grass",
-        "lime",
-        "mint",
-        "sky",
-      ],
+      options: COLORS,
     },
     onClick: {
       action: "clicked",
