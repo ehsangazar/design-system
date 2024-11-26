@@ -61,23 +61,11 @@ const ContextMenuDemo = (props: ContextMenuContent) => {
   return (
     <ContextMenu.Root {...props}>
       <ContextMenu.Trigger>
-        <Box
-          style={{
-            padding: "var(--space-2)",
-            borderRadius: "var(--radius-2)",
-            backgroundColor: "var(--gray-4)",
-            height: "100px",
-            cursor: "pointer",
-          }}
-        >
+        <Box className="p-2 rounded-md bg-gray-200 h-100 cursor-pointer">
           <Text>Right-click me</Text>
         </Box>
       </ContextMenu.Trigger>
-      <ContextMenu.Content
-        style={{
-          backgroundColor: "white",
-        }}
-      >
+      <ContextMenu.Content className="bg-white">
         <ContextMenu.Item shortcut="⌘ E">Edit</ContextMenu.Item>
         <ContextMenu.Item shortcut="⌘ D">Duplicate</ContextMenu.Item>
         <ContextMenu.Separator />
@@ -104,8 +92,6 @@ const ContextMenuDemo = (props: ContextMenuContent) => {
     </ContextMenu.Root>
   );
 };
-
-// gap: Responsive<Union<string, "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9">>
 
 const meta: Meta<typeof ContextMenuDemo> = {
   title: "Components/ContextMenu",

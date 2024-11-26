@@ -1,5 +1,5 @@
 import "./App.css";
-import { Box, Button, Flex, Text } from "@radix-ui/themes";
+import { Button, Flex, Text } from "@radix-ui/themes";
 
 function App() {
   return (
