@@ -62,7 +62,7 @@ export const LargeSolid: Story = {
     size: "2",
     variant: "solid",
     color: "blue",
-    children: "Large Solid",
+    children: <MagnifyingGlassIcon width="25" height="25" />,
     onClick: mockClickHandler,
   },
 };
@@ -72,7 +72,7 @@ export const SmallSoft: Story = {
     size: "1",
     variant: "soft",
     color: "blue",
-    children: "Small Soft",
+    children: <MagnifyingGlassIcon width="15" height="15" />,
     onClick: mockClickHandler,
   },
 };
@@ -82,7 +82,7 @@ export const LargeSoft: Story = {
     size: "2",
     variant: "soft",
     color: "blue",
-    children: "Large Soft",
+    children: <MagnifyingGlassIcon width="25" height="25" />,
     onClick: mockClickHandler,
   },
 };
