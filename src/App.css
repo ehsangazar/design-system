@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rt-BaseCard::before,
+.rt-BaseCard::after {
+    inset: 2px;
+}
