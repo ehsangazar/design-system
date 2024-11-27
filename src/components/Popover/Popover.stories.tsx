@@ -92,6 +92,7 @@ type Story = StoryObj<typeof PopoverDemo>;
 export const Default: Story = {
   args: {},
 };
+
 export const Size1: Story = {
   args: {
     size: "1",
