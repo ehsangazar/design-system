@@ -1,16 +1,16 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
-import "@radix-ui/themes/styles.css";
-import "../src/reset.css";
-import "../src/App.css";
-import "./styles.css";
+import Wrapper from "../src/components/Wrapper/Wrapper";
 import Theme from "../src/components/Theme/Theme";
+import "./styles.css";
 
 export const decorators = [
   (Story) => (
-    <Theme>
-      <Story />
-    </Theme>
+    <Wrapper>
+      <Theme>
+        <Story />
+      </Theme>
+    </Wrapper>
   ),
 ];
 
