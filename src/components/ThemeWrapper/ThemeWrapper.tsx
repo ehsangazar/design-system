@@ -99,14 +99,14 @@ interface Theme {
   breakpoints: { [key: string]: string };
 }
 
-const Wrapper = ({
+const ThemeWrapper = ({
   children,
   customTheme,
   customColors,
 }: {
   children: ReactNode;
   customTheme?: Theme;
-  customColors: Partial<Record<keyof typeof defaultColors, string>>;
+  customColors?: Partial<Record<keyof typeof defaultColors, string>>;
 }) => {
   const theme: Theme = { ...defaultTheme, ...customTheme };
   const colors = { ...defaultColors, ...customColors };
@@ -120,10 +120,10 @@ const Wrapper = ({
   }, {});
 
   return (
-    <div className="wrapper" style={style}>
+    <div className="ThemeWrapper" style={style}>
       <RadixTheme {...theme}>{children}</RadixTheme>
     </div>
   );
 };
 
-export default Wrapper;
+export default ThemeWrapper;

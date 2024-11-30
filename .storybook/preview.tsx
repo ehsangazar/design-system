@@ -1,13 +1,13 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
-import Wrapper from "../src/components/Wrapper/Wrapper";
+import ThemeWrapper from "../src/components/ThemeWrapper/ThemeWrapper";
 import "./styles.css";
 
 export const decorators = [
   (Story) => (
-    <Wrapper>
+    <ThemeWrapper>
       <Story />
-    </Wrapper>
+    </ThemeWrapper>
   ),
 ];
 
