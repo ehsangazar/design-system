@@ -3,7 +3,7 @@ import Code from "./Code";
 import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Code> = {
-  title: "Typography/Code",
+  title: "Components/Code",
   component: Code,
   argTypes: {
     children: {

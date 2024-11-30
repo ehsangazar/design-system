@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Heading> = {
-  title: "Typography/Heading",
+  title: "Components/Heading",
   component: Heading,
   args: {
     children: "Hello World",

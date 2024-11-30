@@ -3,7 +3,7 @@ import Text from "./Text";
 import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Text> = {
-  title: "Typography/Text",
+  title: "Components/Text",
   component: Text,
   argTypes: {
     children: {

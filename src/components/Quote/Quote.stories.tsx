@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Quote from "./Quote";
 
 const meta: Meta<typeof Quote> = {
-  title: "Typography/Quote",
+  title: "Components/Quote",
   component: Quote,
   argTypes: {
     children: {

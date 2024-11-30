@@ -3,7 +3,7 @@ import Link from "./Link";
 import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Link> = {
-  title: "Typography/Link",
+  title: "Components/Link",
   component: Link,
   argTypes: {
     children: {

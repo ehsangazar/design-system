@@ -3,7 +3,7 @@ import Blockquote from "./Blockquote";
 import { COLORS } from "../../constants/COLORS";
 
 const meta: Meta<typeof Blockquote> = {
-  title: "Typography/Blockquote",
+  title: "Components/Blockquote",
   component: Blockquote,
   argTypes: {
     children: {

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Em from "./Em";
 
 const meta: Meta<typeof Em> = {
-  title: "Typography/Em",
+  title: "Components/Em",
   component: Em,
   argTypes: {
     children: {

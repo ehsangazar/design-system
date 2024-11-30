@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Strong from "./Strong";
 
 const meta: Meta<typeof Strong> = {
-  title: "Typography/Strong",
+  title: "Components/Strong",
   component: Strong,
   argTypes: {
     children: {
