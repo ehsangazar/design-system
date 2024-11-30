@@ -239,8 +239,10 @@ export const Default: Story = {
   args: {
     children: "Box",
   },
-  render: ({ children }) => (
-    <Box className="bg-blue-500 text-white p-4">{children}</Box>
+  render: ({ children, ...rest }) => (
+    <Box className="bg-blue-500 text-white" {...rest}>
+      {children}
+    </Box>
   ),
 };
 export const WithPadding: Story = {
@@ -248,8 +250,10 @@ export const WithPadding: Story = {
     children: "Box with padding",
     p: "4",
   },
-  render: ({ children, p }) => (
-    <Box className={`bg-blue-500 text-white p-${p}`}>{children}</Box>
+  render: ({ children, ...rest }) => (
+    <Box className={`bg-blue-500 text-white`} {...rest}>
+      {children}
+    </Box>
   ),
 };
 
@@ -258,8 +262,10 @@ export const WithMargin: Story = {
     children: "Box with margin",
     m: "4",
   },
-  render: ({ children, m }) => (
-    <Box className={`bg-blue-500 text-white m-${m}`}>{children}</Box>
+  render: ({ children, ...rest }) => (
+    <Box className={`bg-blue-500 text-white`} {...rest}>
+      {children}
+    </Box>
   ),
 };
 
