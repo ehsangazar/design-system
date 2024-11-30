@@ -7,8 +7,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.rt-BaseCard::before,
-.rt-BaseCard::after {
-    inset: 2px;
-}
