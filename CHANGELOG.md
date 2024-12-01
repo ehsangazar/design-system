@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/ehsangazar/design-system/compare/v1.0.1...v1.0.2) (2024-12-01)
+
+
+### Bug Fixes
+
+* add GitHub package registry configuration to npmrc ([0021083](https://github.com/ehsangazar/design-system/commit/00210836734679d0f788d5367cdc549569806f67))
+
 ## [1.0.1](https://github.com/ehsangazar/design-system/compare/v1.0.0...v1.0.1) (2024-12-01)
 
 
