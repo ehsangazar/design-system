@@ -37,15 +37,8 @@ jobs:
       - name: Build package
         run: npm run build-package
 
-      # Step 7: Release Please
-      - name: Release Please
-        uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          branch: "master"
-
-      # Step 8: Publish to npm
-      - name: Publish to npm
-        run: npm publish --access public
+      - name: Run semantic-release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
