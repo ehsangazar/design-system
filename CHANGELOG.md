@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/ehsangazar/design-system/compare/v1.4.0...v1.5.0) (2024-12-01)
+
+
+### Features
+
+* update package configuration with license, description, and new dependencies ([b38f8ec](https://github.com/ehsangazar/design-system/commit/b38f8ecd2f3905e0fc41dbc2d497b5a7aa7dcb99))
+
 # [1.4.0](https://github.com/ehsangazar/design-system/compare/v1.3.0...v1.4.0) (2024-12-01)
 
 
