@@ -1,5 +1,6 @@
 {
   "branches": ["master"],
+  "repositoryUrl": "https://github.com/ehsangazar/design-system",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
