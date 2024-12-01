@@ -9,7 +9,7 @@
   "author": "Gazar.dev",
   "scripts": {
     "dev": "vite",
-    "publish": "vite build --config vite.config.publish.js",
+    "build-package": "vite build --config vite.config.publish.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",

@@ -35,16 +35,17 @@ jobs:
 
       # Step 6: Build the package
       - name: Build package
-        run: npm run build
+        run: npm run build-package
 
+      # Step 7: Release Please
       - name: Release Please
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
           package-name: "@ehsangazar/design-system"
 
-      # Step 7: Publish to npm
+      # Step 8: Publish to npm
       - name: Publish to npm
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
