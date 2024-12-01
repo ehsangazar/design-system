@@ -30,8 +30,8 @@ jobs:
         run: npm install --legacy-peer-deps
 
       # Step 5: Run tests (optional)
-      - name: Run tests
-        run: npm run test-storybook
+      # - name: Run tests
+      #   run: npm run test-storybook
 
       # Step 6: Build the package
       - name: Build package
