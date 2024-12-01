@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/ehsangazar/design-system/compare/v1.0.3...v1.1.0) (2024-12-01)
+
+
+### Bug Fixes
+
+* correct output directory key in Vite config and add vite-plugin-dts dependency ([966cc4e](https://github.com/ehsangazar/design-system/commit/966cc4e74ab2746967f72a3606f47ea2bd20a474))
+
+
+### Features
+
+* add peer dependencies for React and update TypeScript configuration ([97a265c](https://github.com/ehsangazar/design-system/commit/97a265cfc926d063ca718c2acc8b72cb9f118dad))
+
 ## [1.0.3](https://github.com/ehsangazar/design-system/compare/v1.0.2...v1.0.3) (2024-12-01)
 
 
