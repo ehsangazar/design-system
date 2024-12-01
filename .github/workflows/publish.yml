@@ -25,13 +25,12 @@ jobs:
       - name: Build package
         run: npm run build-package
 
-      - name: Debug npm token
+      - name: Verify npm token
         run: |
-          echo "Token length: $(echo ${{ secrets.NPM_TOKEN }} | wc -c)"
-          npm whoami --loglevel verbose
-
-      - name: Debug NPM_TOKEN
-        run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}" | sed 's/./*/g'
+          npm config list -l
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          npm config list -l
+          npm whoami
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
