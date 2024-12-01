@@ -3,17 +3,17 @@ import typescript from "@rollup/plugin-typescript";
 
 export default defineConfig({
   build: {
-    outDir: "./dist", // Specify the output directory
+    outDir: "./dist",
     lib: {
-      entry: "src/index.ts", // Entry point for your package
-      name: "GazDesignSystem", // Name for UMD build
-      formats: ["umd", "es", "cjs"], // Output formats: ESM (.mjs) and CommonJS (.cjs)
-      fileName: (format) => `index.${format}.js`, // Output file names
+      entry: "src/index.ts",
+      name: "GazDesignSystem",
+      formats: ["umd", "es", "cjs"],
+      fileName: (format) => `index.${format}.js`,
     },
-    sourcemap: true, // Generate source maps for easier debugging
+    sourcemap: true,
     rollupOptions: {
-      external: ["react", "react-dom"], // Do not bundle React and ReactDOM
-      plugins: [typescript({ tsconfig: "./tsconfig.json" })], // Use TypeScript plugin for Rollup
+      external: ["react", "react-dom"],
+      plugins: [typescript({ tsconfig: "./tsconfig.json" })],
     },
   },
 });
