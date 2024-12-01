@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/ehsangazar/design-system/compare/v1.0.2...v1.0.3) (2024-12-01)
+
+
+### Bug Fixes
+
+* update npm registry configuration to use npmjs.org and remove deprecated .npmrc-bc file ([8c85866](https://github.com/ehsangazar/design-system/commit/8c85866fee7d5defa623ae2c304ebef161d125ee))
+
 ## [1.0.2](https://github.com/ehsangazar/design-system/compare/v1.0.1...v1.0.2) (2024-12-01)
 
 
