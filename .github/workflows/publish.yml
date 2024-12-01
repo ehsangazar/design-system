@@ -28,6 +28,7 @@ jobs:
       - name: Verify npm token
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "@ehsangazar:registry=https://npm.pkg.github.com/" >> .npmrc
           npm whoami
 
       - name: Semantic Release
