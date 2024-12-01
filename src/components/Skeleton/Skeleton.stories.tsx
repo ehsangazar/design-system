@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Skeleton from "./Skeleton";
 import Flex from "../Flex/Flex";

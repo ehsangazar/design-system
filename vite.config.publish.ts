@@ -9,18 +9,19 @@ export default defineConfig({
       insertTypesEntry: true,
       staticImport: true,
       outDir: "dist",
+      rollupTypes: true,
     }),
   ],
   build: {
     lib: {
       entry: "src/index.ts",
       name: "Gaz Design System",
-      fileName: (format) => `gaz-design-system.${format}.js`,
-      formats: ["es", "cjs", "umd", "iife"],
+      formats: ["es", "cjs", "umd", "iife"], // Choose the formats you need
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom"], // Make sure react and react-dom are treated as external dependencies
       output: {
+        preserveModules: true,
         name: "GazDesignSystem",
         globals: {
           react: "React",

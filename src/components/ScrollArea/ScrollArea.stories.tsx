@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import ScrollArea from "./ScrollArea";
 import Box from "../Box/Box";

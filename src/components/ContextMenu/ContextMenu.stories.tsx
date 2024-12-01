@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import ContextMenu from "./ContextMenu";
 import { COLORS } from "../../constants/COLORS";

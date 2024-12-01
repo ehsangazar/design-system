@@ -1,3 +1,4 @@
+import React from "react";
 import { Button, Flex, Text } from "@radix-ui/themes";
 
 function App() {

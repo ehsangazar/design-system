@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Accordion from "./Accordion";
 import { ChevronDownIcon } from "@radix-ui/themes";
@@ -51,10 +52,6 @@ const meta: Meta<typeof AccordionDemo> = {
   title: "Components/Accordion",
   component: AccordionDemo,
   argTypes: {
-    tyoe: {
-      control: "select",
-      options: ["single", "multiple"],
-    },
     value: {
       control: "text",
     },

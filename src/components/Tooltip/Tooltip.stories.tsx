@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Tooltip from "./Tooltip";
 import { IconButton } from "@radix-ui/themes";

@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Grid from "./Grid";
 import Box from "../Box/Box";
@@ -223,17 +224,6 @@ const meta: Meta<typeof Grid> = {
     overflowY: {
       control: "select",
       options: ["visible", "hidden", "clip", "scroll", "auto"],
-    },
-    GridBasis: {
-      control: "text",
-    },
-    GridShrink: {
-      control: "select",
-      options: ["0", "1"],
-    },
-    GridGrow: {
-      control: "select",
-      options: ["0", "1"],
     },
     gridArea: {
       control: "text",

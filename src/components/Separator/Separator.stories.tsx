@@ -1,59 +1,9 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Separator from "./Separator";
 import { COLORS } from "../../constants/COLORS";
 import Flex from "../Flex/Flex";
 import Text from "../Text/Text";
-
-interface SeparatorContent {
-  orientation: "horizontal" | "vertical";
-  size: "1" | "2" | "3";
-  decorative: boolean;
-  color?:
-    | "gray"
-    | "gold"
-    | "bronze"
-    | "brown"
-    | "yellow"
-    | "amber"
-    | "orange"
-    | "tomato"
-    | "red"
-    | "ruby"
-    | "crimson"
-    | "pink"
-    | "plum"
-    | "purple"
-    | "violet"
-    | "iris"
-    | "indigo"
-    | "blue"
-    | "cyan"
-    | "teal"
-    | "jade"
-    | "green"
-    | "grass"
-    | "bronze"
-    | "brown"
-    | "yellow"
-    | "amber"
-    | "orange"
-    | "tomato"
-    | "red"
-    | "ruby"
-    | "crimson"
-    | "pink"
-    | "plum"
-    | "purple"
-    | "violet"
-    | "iris"
-    | "indigo"
-    | "blue"
-    | "cyan"
-    | "teal"
-    | "jade"
-    | "green"
-    | "grass";
-}
 
 const SeparatorDemo = () => {
   return (

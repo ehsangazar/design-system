@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import TabNav from "./TabNav";
 import { COLORS } from "../../constants/COLORS";

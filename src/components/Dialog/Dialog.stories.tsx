@@ -1,3 +1,4 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Dialog from "./Dialog";
 import Text from "../Text/Text";
@@ -18,7 +19,7 @@ interface DialogContent {
 
 const DialogDemo = (props: DialogContent) => {
   return (
-    <Dialog.Root>
+    <Dialog.Root {...props}>
       <Dialog.Trigger>
         <Button>Edit profile</Button>
       </Dialog.Trigger>
