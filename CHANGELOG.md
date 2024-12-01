@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/ehsangazar/design-system/compare/v1.0.0...v1.0.1) (2024-12-01)
+
+
+### Bug Fixes
+
+* add NPM_TOKEN to publish workflow environment variables ([0a4a2f8](https://github.com/ehsangazar/design-system/commit/0a4a2f8f6ec17f2f61057d42228404b5b72db84b))
+* remove redundant npm config list commands in workflow ([00ca9a0](https://github.com/ehsangazar/design-system/commit/00ca9a00e5e981ccafc3a68e8047223ebef501b1))
+
 # 1.0.0 (2024-12-01)
 
 
