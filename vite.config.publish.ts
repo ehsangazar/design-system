@@ -8,7 +8,7 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
       staticImport: true,
-      outputDir: "dist",
+      outDir: "dist",
     }),
   ],
   build: {
