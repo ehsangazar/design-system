@@ -13,6 +13,7 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
+        name: "GazDesignSystem",
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
