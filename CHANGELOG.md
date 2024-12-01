@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ehsangazar/design-system/compare/v1.2.0...v1.3.0) (2024-12-01)
+
+
+### Features
+
+* add React imports to components and stories ([788f889](https://github.com/ehsangazar/design-system/commit/788f8898ee9c03d2d6844899b0684d651988ba55))
+
 # [1.2.0](https://github.com/ehsangazar/design-system/compare/v1.1.0...v1.2.0) (2024-12-01)
 
 
