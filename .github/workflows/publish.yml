@@ -28,7 +28,7 @@ jobs:
       - name: Verify npm token
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          npm whoami
+          npm whoami --loglevel verbose
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
