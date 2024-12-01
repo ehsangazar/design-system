@@ -6,6 +6,7 @@
   "main": "dist/gaz-design-system.cjs.js",
   "module": "dist/gaz-design-system.es.js",
   "browser": "dist/gaz-design-system.umd.js",
+  "types": "dist/gaz-design-system.es.d.ts",
   "author": "Gazar.dev",
   "scripts": {
     "dev": "vite",
