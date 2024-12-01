@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/ehsangazar/design-system/compare/v1.3.0...v1.4.0) (2024-12-01)
+
+
+### Bug Fixes
+
+* restore @rollup/plugin-typescript in devDependencies and add rollup to dependencies ([668f91f](https://github.com/ehsangazar/design-system/commit/668f91fefabba7f1afdec5dc14955316fbc40e02))
+
+
+### Features
+
+* add Vite configuration for building the design system package ([8cb0ff2](https://github.com/ehsangazar/design-system/commit/8cb0ff2167f562dba30038986271a5934af1216b))
+
 # [1.3.0](https://github.com/ehsangazar/design-system/compare/v1.2.0...v1.3.0) (2024-12-01)
 
 
