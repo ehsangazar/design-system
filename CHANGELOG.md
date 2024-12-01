@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ehsangazar/design-system/compare/v1.1.0...v1.2.0) (2024-12-01)
+
+
+### Features
+
+* add TypeScript declaration file path to package.json ([2fcc070](https://github.com/ehsangazar/design-system/commit/2fcc070eb0b399d5ab678f97836996a062898499))
+
 # [1.1.0](https://github.com/ehsangazar/design-system/compare/v1.0.3...v1.1.0) (2024-12-01)
 
 
