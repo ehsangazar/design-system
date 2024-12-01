@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Callout from "./Callout";
 import Link from "../Link/Link";

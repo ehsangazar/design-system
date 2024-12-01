@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import HoverCard from "./HoverCard";
 import Text from "../Text/Text";

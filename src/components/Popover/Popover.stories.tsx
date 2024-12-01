@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Popover from "./Popover";
 import Button from "../Button/Button";

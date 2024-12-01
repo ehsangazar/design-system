@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { COLORS } from "../../constants/COLORS";
 import DropdownMenu from "./DropdownMenu";

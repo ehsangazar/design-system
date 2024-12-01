@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Flex from "./Flex";
 import Box from "../Box/Box";

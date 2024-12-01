@@ -1,4 +1,3 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import CheckboxGroup from "./CheckboxGroup";
 import { COLORS } from "../../constants/COLORS";

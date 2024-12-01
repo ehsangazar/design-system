@@ -1,4 +1,3 @@
-import React from "react";
 import { Button as RadixButton } from "@radix-ui/themes";
 import { ButtonProps } from "./Button.d";
 

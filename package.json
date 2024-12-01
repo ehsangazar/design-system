@@ -10,7 +10,7 @@
   "author": "Gazar.dev",
   "scripts": {
     "dev": "vite",
-    "build-package": "npx tsc --project tsconfig.app.json",
+    "build-package": "npx tsc",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "tsc -b && vite build",
