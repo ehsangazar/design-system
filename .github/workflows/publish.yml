@@ -42,7 +42,7 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: "@ehsangazar/design-system"
+          branch: "master"
 
       # Step 8: Publish to npm
       - name: Publish to npm
