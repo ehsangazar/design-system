@@ -4,6 +4,7 @@ export default defineConfig({
   entry: [
     "src/**/*.ts",
     "src/**/*.tsx",
+    "src/**/*.css",
     "!src/**/*.stories.ts",
     "!src/**/*.stories.tsx",
   ],

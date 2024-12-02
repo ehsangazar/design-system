@@ -11,7 +11,8 @@
   "author": "Gazar.dev",
   "scripts": {
     "dev": "vite",
-    "build:package": "node --max-old-space-size=8192 ./node_modules/.bin/tsup --config tsup.config.ts",
+    "build:package:tsup": "node --max-old-space-size=8192 ./node_modules/.bin/tsup --config tsup.config.ts",
+    "build:package": "tsc -b && vite build --config vite.config.package.ts",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "tsc -b && vite build",
@@ -59,6 +60,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
     "eslint": "^9.16.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
@@ -71,9 +73,10 @@
     "storybook": "^8.4.6",
     "tailwindcss": "^3.4.15",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.16.0",
-    "vite": "^6.0.1",
+    "vite": "^6.0.2",
     "vite-plugin-css": "^1.0.4"
   },
   "peerDependencies": {
