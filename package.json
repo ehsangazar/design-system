@@ -3,16 +3,15 @@
   "private": false,
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "types": "dist/types/index.d.ts",
-  "umd:main": "dist/index.umd.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "description": "A design system for React",
   "author": "Gazar.dev",
   "scripts": {
     "dev": "vite",
-    "build-package": "vite build --config vite.publish.config.ts",
+    "build:package": "node --max-old-space-size=8192 ./node_modules/.bin/tsup --config tsup.config.ts",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "tsc -b && vite build",
@@ -32,6 +31,7 @@
     "color2k": "^2.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tsup": "^8.3.5",
     "vite-plugin-dts": "^4.3.0"
   },
   "devDependencies": {
