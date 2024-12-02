@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/ehsangazar/design-system/compare/v1.6.1...v1.6.2) (2024-12-02)
+
+
+### Bug Fixes
+
+* restore Table and Tooltip exports in index.ts ([f6f326e](https://github.com/ehsangazar/design-system/commit/f6f326ea37e315f554b04be5e74342a47f59ba36))
+
 ## [1.6.1](https://github.com/ehsangazar/design-system/compare/v1.6.0...v1.6.1) (2024-12-02)
 
 
