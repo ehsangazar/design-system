@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/ehsangazar/design-system/compare/v1.5.0...v1.5.1) (2024-12-01)
+
+
+### Bug Fixes
+
+* update package configuration to use devOptional instead of dev and adjust TypeScript settings ([32b54d1](https://github.com/ehsangazar/design-system/commit/32b54d15560fe10d8873808adb5133313f6b8b64))
+
 # [1.5.0](https://github.com/ehsangazar/design-system/compare/v1.4.0...v1.5.0) (2024-12-01)
 
 
