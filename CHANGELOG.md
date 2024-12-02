@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/ehsangazar/design-system/compare/v1.6.2...v1.7.0) (2024-12-02)
+
+
+### Bug Fixes
+
+* correct import paths in module files and improve build performance ([cb8c8e3](https://github.com/ehsangazar/design-system/commit/cb8c8e38bb655a3ca51f519c0362249adfd3c51e))
+* standardize quotation marks and clean up eslint configuration ([9376cf0](https://github.com/ehsangazar/design-system/commit/9376cf02b5b296e2affad4bff990be7b02765ff2))
+* update package.json main and module paths, and enhance Vite configuration with dts and cssnano plugins ([0e1afe6](https://github.com/ehsangazar/design-system/commit/0e1afe69811e83972ac5d6b0fdc8255eaea2b9f1))
+
+
+### Features
+
+* add Vite configuration for package build and include CSS in tsup entry ([15f3838](https://github.com/ehsangazar/design-system/commit/15f38387bda7dd2e5870aa1d8cbf6ba2aca612ce))
+
 ## [1.6.2](https://github.com/ehsangazar/design-system/compare/v1.6.1...v1.6.2) (2024-12-02)
 
 
