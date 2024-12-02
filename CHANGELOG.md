@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/ehsangazar/design-system/compare/v1.5.1...v1.6.0) (2024-12-02)
+
+
+### Features
+
+* add vite-plugin-css dependency and update Inset story props ([5a7b9f6](https://github.com/ehsangazar/design-system/commit/5a7b9f68b795e58cf66d93910200443813a66e86))
+
 ## [1.5.1](https://github.com/ehsangazar/design-system/compare/v1.5.0...v1.5.1) (2024-12-01)
 
 
