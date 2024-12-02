@@ -1,15 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import cssnano from "cssnano";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), dts()],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "GazDesignSystem",
+      name: "Design System",
       formats: ["es", "cjs"],
-      fileName: (format) => `gazDesignSystem.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -25,8 +26,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        require("cssnano")({
+        cssnano({
           preset: "default",
         }),
       ],
