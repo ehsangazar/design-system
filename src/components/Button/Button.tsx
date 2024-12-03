@@ -7,7 +7,7 @@ export interface ButtonProps extends RadixButtonProps {
   width?: string;
   height?: string;
   m?: string;
-  p: string;
+  p?: string;
   mt?: string;
   mr?: string;
   mb?: string;
