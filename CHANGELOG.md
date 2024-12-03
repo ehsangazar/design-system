@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/ehsangazar/design-system/compare/v1.7.0...v1.8.0) (2024-12-03)
+
+
+### Features
+
+* integrate @ehsangazar/design-system and enhance Button component with custom props ([be1c6c6](https://github.com/ehsangazar/design-system/commit/be1c6c672b4d64b81dbcf940bc64d213b59e9d58))
+
 # [1.7.0](https://github.com/ehsangazar/design-system/compare/v1.6.2...v1.7.0) (2024-12-02)
 
 
