@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/ehsangazar/design-system/compare/v1.8.0...v1.9.0) (2024-12-03)
+
+
+### Bug Fixes
+
+* update package-lock.json to replace 'dev' with 'devOptional' for better clarity ([9923b35](https://github.com/ehsangazar/design-system/commit/9923b357c3e4c88d0803e41c159e7c142fc1c5e4))
+
+
+### Features
+
+* add new validation logic to the form component for improved user input handling ([9aa363f](https://github.com/ehsangazar/design-system/commit/9aa363f0bf889653791570db26fa686af72c6e42))
+* update Button component to accept custom width prop and adjust imports ([e572e0d](https://github.com/ehsangazar/design-system/commit/e572e0d68d1b075bb70394eeaab1e1dcf195ff46))
+
 # [1.8.0](https://github.com/ehsangazar/design-system/compare/v1.7.0...v1.8.0) (2024-12-03)
 
 
