@@ -2,14 +2,13 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import App from "./App";
-import { ThemePanel } from "@radix-ui/themes";
-import ThemeWrapper from "./components/ThemeWrapper/ThemeWrapper";
+import { ThemeWrapper } from "@ehsangazar/design-system";
+import "@ehsangazar/design-system/dist/design-system.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeWrapper>
       <App />
-      <ThemePanel />
     </ThemeWrapper>
   </StrictMode>
 );
