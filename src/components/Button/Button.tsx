@@ -1,7 +1,7 @@
 import { Button as RadixButton } from "@radix-ui/themes";
 import type { ButtonProps as RadixButtonProps } from "@radix-ui/themes";
 
-interface ButtonProps extends RadixButtonProps {
+export interface ButtonProps extends RadixButtonProps {
   w?: string;
   h?: string;
   width?: string;
