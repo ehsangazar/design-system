@@ -100,7 +100,12 @@ export const defaultColors = {
   mauve: "#8E8C99",
 };
 
-export const defaultTypography = {
+export const defaultTypography: Record<
+  string,
+  {
+    size: Responsive<"7" | "6" | "5" | "4" | "3" | "2" | "1" | "8" | "9">;
+  }
+> = {
   heading1: {
     size: "7",
   },
@@ -139,13 +144,11 @@ const ThemeWrapper = ({
   children: ReactNode;
   customTheme?: Theme;
   customColors?: Partial<Record<keyof typeof defaultColors, string>>;
-  customTypography?: Partial<
-    Record<
-      keyof typeof defaultTypography,
-      {
-        size: Responsive<"7" | "6" | "5" | "4" | "3" | "2" | "1" | "8" | "9">;
-      }
-    >
+  customTypography?: Record<
+    string,
+    {
+      size: Responsive<"7" | "6" | "5" | "4" | "3" | "2" | "1" | "8" | "9">;
+    }
   >;
 }) => {
   const theme: Theme = { ...defaultTheme, ...customTheme };
