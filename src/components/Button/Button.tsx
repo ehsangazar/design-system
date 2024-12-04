@@ -1,7 +1,7 @@
 import { Button as RadixButton } from "@radix-ui/themes";
 import type { ButtonProps as RadixButtonProps } from "@radix-ui/themes";
-
-export interface ButtonProps extends RadixButtonProps {
+import React from "react";
+export interface ButtonProps extends Omit<RadixButtonProps, "size"> {
   w?: string;
   h?: string;
   width?: string;
@@ -23,11 +23,12 @@ export interface ButtonProps extends RadixButtonProps {
   padding?: string;
   margin?: string;
   colorScheme?: RadixButtonProps["color"];
-  size: RadixButtonProps["size"] | "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   isActive?: boolean;
   isDisabled?: boolean;
   isLoading?: boolean;
-  rightIcon: React.ReactNode;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
 }
 
 const Button = ({ children, ...rest }: ButtonProps) => {
@@ -105,12 +106,12 @@ const Button = ({ children, ...rest }: ButtonProps) => {
 
   let newSize = undefined;
   if (rest.size) {
-    if (rest.size === "xs") customProps.size = "1";
-    if (rest.size === "sm") customProps.size = "2";
-    if (rest.size === "md") customProps.size = "3";
-    if (rest.size === "lg") customProps.size = "4";
-    if (rest.size === "xl") customProps.size = "4";
-    newSize = rest.size as RadixButtonProps["size"];
+    if (rest.size === "xs") newSize = "1";
+    if (rest.size === "sm") newSize = "2";
+    if (rest.size === "md") newSize = "3";
+    if (rest.size === "lg") newSize = "4";
+    if (rest.size === "xl") newSize = "4";
+    newSize = newSize as RadixButtonProps["size"];
   }
 
   const newProps = {
@@ -121,8 +122,9 @@ const Button = ({ children, ...rest }: ButtonProps) => {
 
   return (
     <RadixButton {...newProps}>
+      {React.isValidElement(rest.leftIcon) && rest.leftIcon}
       {children}
-      {rest.rightIcon}
+      {React.isValidElement(rest.rightIcon) && rest.rightIcon}
     </RadixButton>
   );
 };

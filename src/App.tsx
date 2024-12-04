@@ -1,13 +1,20 @@
-import { Button, Flex, Text } from "../src";
+import { IconJarLogoIcon } from "@radix-ui/react-icons";
+import { Button, Box, Text } from "../src";
 
 function App() {
   return (
-    <Flex direction="column" gap="2" m={"5"}>
+    <Box>
       <Text>Hello from Gaz Themes :)</Text>
-      <Button colorScheme="teal" width="100%">
+      <br />
+      <Button
+        leftIcon={<IconJarLogoIcon width={20} height={20} />}
+        colorScheme="teal"
+        size="md"
+        rightIcon={<IconJarLogoIcon width={20} height={20} />}
+      >
         Let's go
       </Button>
-    </Flex>
+    </Box>
   );
 }
 
