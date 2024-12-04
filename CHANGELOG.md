@@ -1,3 +1,11 @@
+# [1.18.0](https://github.com/ehsangazar/design-system/compare/v1.17.0...v1.18.0) (2024-12-04)
+
+
+### Features
+
+* integrate ThemeContext for dynamic typography in Heading and Text components ([d1f3983](https://github.com/ehsangazar/design-system/commit/d1f39838ae89d27bfa403553b2dcdbc13dc3b70f))
+* update ThemeWrapper and ThemeContext to use a more flexible typography structure ([9ded110](https://github.com/ehsangazar/design-system/commit/9ded110f9a861d0debc109f909e7f8c3b498f6b9))
+
 # [1.17.0](https://github.com/ehsangazar/design-system/compare/v1.16.0...v1.17.0) (2024-12-04)
 
 
