@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/ehsangazar/design-system/compare/v1.16.0...v1.17.0) (2024-12-04)
+
+
+### Features
+
+* update Grid component stories to use red Box elements and add new Heading components to index ([5d7c078](https://github.com/ehsangazar/design-system/commit/5d7c078ec7c26abcae5af6c381aa2009fe31410a))
+
 # [1.16.0](https://github.com/ehsangazar/design-system/compare/v1.15.0...v1.16.0) (2024-12-04)
 
 
