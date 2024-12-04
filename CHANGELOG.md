@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/ehsangazar/design-system/compare/v1.18.0...v1.19.0) (2024-12-04)
+
+
+### Features
+
+* refactor Heading components to use HeadingProps for improved type safety ([f839ca7](https://github.com/ehsangazar/design-system/commit/f839ca70b9c9eb8ddea580cb5219e8bfedf837d4))
+
 # [1.18.0](https://github.com/ehsangazar/design-system/compare/v1.17.0...v1.18.0) (2024-12-04)
 
 
