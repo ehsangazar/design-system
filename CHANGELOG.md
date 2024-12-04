@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/ehsangazar/design-system/compare/v1.11.0...v1.12.0) (2024-12-04)
+
+
+### Features
+
+* add size and rightIcon props to Button component for enhanced customization ([41a961d](https://github.com/ehsangazar/design-system/commit/41a961d70ee21c1f27000f2b1e1695423b05e8fe))
+* enhance Button component with leftIcon and rightIcon props for improved customization ([e23d531](https://github.com/ehsangazar/design-system/commit/e23d531ff1ab7b643027f06e62855df8efa21dfb))
+* update Button component size options and adjust story examples for better clarity ([3d18105](https://github.com/ehsangazar/design-system/commit/3d18105eb022e457ae01d3346ac4a934d80bbf8c))
+
 # [1.11.0](https://github.com/ehsangazar/design-system/compare/v1.10.0...v1.11.0) (2024-12-04)
 
 
