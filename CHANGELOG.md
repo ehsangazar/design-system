@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/ehsangazar/design-system/compare/v1.12.0...v1.13.0) (2024-12-04)
+
+
+### Features
+
+* enhance Box, Flex, and Grid components with custom styling props for improved layout control ([24125b1](https://github.com/ehsangazar/design-system/commit/24125b10e28522441ad9f45d4b92b3872b220e8c))
+
 # [1.12.0](https://github.com/ehsangazar/design-system/compare/v1.11.0...v1.12.0) (2024-12-04)
 
 
