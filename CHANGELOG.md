@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/ehsangazar/design-system/compare/v1.10.0...v1.11.0) (2024-12-04)
+
+
+### Features
+
+* update Button component to use Radix color scheme and apply teal color in App component ([5c8b192](https://github.com/ehsangazar/design-system/commit/5c8b1926354e4eee59b4a29604981295efac60e0))
+
 # [1.10.0](https://github.com/ehsangazar/design-system/compare/v1.9.0...v1.10.0) (2024-12-03)
 
 
