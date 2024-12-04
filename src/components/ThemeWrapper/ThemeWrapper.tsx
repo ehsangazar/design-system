@@ -1,14 +1,15 @@
 import { ReactNode } from "react";
 import { Theme as RadixTheme } from "@radix-ui/themes";
-
 import "./reset.css";
 import "@radix-ui/themes/styles.css";
 import "@radix-ui/themes/layout.css";
 import "./theme.css";
 import "./main.css";
 import { generateShades } from "./generateShades";
+import ThemeContext from "../../contexts/ThemeContext";
+import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
 
-interface Theme {
+export interface Theme {
   apprearance?: "light" | "dark";
   onAccentColorChange?: (accentColor: Theme["accentColor"]) => void;
   onGrayColorChange?: (grayColor: Theme["grayColor"]) => void;
@@ -68,7 +69,7 @@ const defaultTheme: Theme = {
   },
 };
 
-const defaultColors = {
+export const defaultColors = {
   gray: "#8D8D8D",
   gold: "#FFC700",
   bronze: "#C87533",
@@ -99,14 +100,53 @@ const defaultColors = {
   mauve: "#8E8C99",
 };
 
+export const defaultTypography = {
+  heading1: {
+    size: "7",
+  },
+  heading2: {
+    size: "6",
+  },
+  heading3: {
+    size: "5",
+  },
+  heading4: {
+    size: "4",
+  },
+  heading5: {
+    size: "3",
+  },
+  heading6: {
+    size: "2",
+  },
+  paragraph: {
+    size: "3",
+  },
+  label: {
+    size: "2",
+  },
+  small: {
+    size: "2",
+  },
+};
+
 const ThemeWrapper = ({
   children,
   customTheme,
   customColors,
+  customTypography,
 }: {
   children: ReactNode;
   customTheme?: Theme;
   customColors?: Partial<Record<keyof typeof defaultColors, string>>;
+  customTypography?: Partial<
+    Record<
+      keyof typeof defaultTypography,
+      {
+        size: Responsive<"7" | "6" | "5" | "4" | "3" | "2" | "1" | "8" | "9">;
+      }
+    >
+  >;
 }) => {
   const theme: Theme = { ...defaultTheme, ...customTheme };
   const colors = { ...defaultColors, ...customColors };
@@ -119,10 +159,20 @@ const ThemeWrapper = ({
     };
   }, {});
 
+  const typography = { ...defaultTypography, ...customTypography };
+
   return (
-    <div className="ThemeWrapper" style={style}>
-      <RadixTheme {...theme}>{children}</RadixTheme>
-    </div>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        colors,
+        typography,
+      }}
+    >
+      <div className="ThemeWrapper" style={style}>
+        <RadixTheme {...theme}>{children}</RadixTheme>
+      </div>
+    </ThemeContext.Provider>
   );
 };
 

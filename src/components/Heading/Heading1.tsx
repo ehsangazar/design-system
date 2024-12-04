@@ -1,10 +1,12 @@
+import ThemeContext from "../../contexts/ThemeContext";
 import Heading from "./Heading";
 
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
 
 const Heading1 = ({ children, ...rest }: { children: ReactNode }) => {
+  const { typography } = useContext(ThemeContext);
   return (
-    <Heading as="h1" size={"8"} {...rest}>
+    <Heading as="h1" size={typography?.heading1?.size} {...rest}>
       {children}
     </Heading>
   );
