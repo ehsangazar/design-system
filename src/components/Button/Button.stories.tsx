@@ -17,7 +17,7 @@ const meta: Meta<typeof Button> = {
     },
     size: {
       control: "select",
-      options: ["1", "2", "3", "4"],
+      options: ["xs", "sm", "md", "lg", "xl"],
     },
     highContrast: {
       control: "boolean",
@@ -70,21 +70,21 @@ export const Default: Story = {
 export const Large: Story = {
   args: {
     children: "Button",
-    size: "4",
+    size: "xl",
   },
 };
 
 export const Medium: Story = {
   args: {
     children: "Button",
-    size: "3",
+    size: "lg",
   },
 };
 
 export const Small: Story = {
   args: {
     children: "Button",
-    size: "2",
+    size: "xs",
   },
 };
 

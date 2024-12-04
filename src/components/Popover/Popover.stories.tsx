@@ -47,7 +47,7 @@ const PopoverDemo = (props: PopoverContent) => {
               </Flex>
 
               <Popover.Close>
-                <Button size="1">Comment</Button>
+                <Button size="md">Comment</Button>
               </Popover.Close>
             </Flex>
           </Box>
