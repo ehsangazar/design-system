@@ -23,9 +23,11 @@ export interface ButtonProps extends RadixButtonProps {
   padding?: string;
   margin?: string;
   colorScheme?: RadixButtonProps["color"];
+  size: RadixButtonProps["size"] | "xs" | "sm" | "md" | "lg" | "xl";
   isActive?: boolean;
   isDisabled?: boolean;
   isLoading?: boolean;
+  rightIcon: React.ReactNode;
 }
 
 const Button = ({ children, ...rest }: ButtonProps) => {
@@ -101,12 +103,28 @@ const Button = ({ children, ...rest }: ButtonProps) => {
     delete customProps.colorScheme;
   }
 
+  let newSize = undefined;
+  if (rest.size) {
+    if (rest.size === "xs") customProps.size = "1";
+    if (rest.size === "sm") customProps.size = "2";
+    if (rest.size === "md") customProps.size = "3";
+    if (rest.size === "lg") customProps.size = "4";
+    if (rest.size === "xl") customProps.size = "4";
+    newSize = rest.size as RadixButtonProps["size"];
+  }
+
   const newProps = {
     ...customProps,
+    size: newSize,
     style: customStyle,
   };
 
-  return <RadixButton {...newProps}>{children}</RadixButton>;
+  return (
+    <RadixButton {...newProps}>
+      {children}
+      {rest.rightIcon}
+    </RadixButton>
+  );
 };
 
 export default Button;
