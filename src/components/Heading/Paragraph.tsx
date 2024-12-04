@@ -1,8 +1,9 @@
-import { ReactNode, useContext } from "react";
+import { useContext } from "react";
 import Text from "../Text/Text";
 import ThemeContext from "../../contexts/ThemeContext";
+import { TextProps } from "@radix-ui/themes";
 
-const Paragraph = ({ children, ...rest }: { children: ReactNode }) => {
+const Paragraph = ({ children, ...rest }: TextProps) => {
   const { typography } = useContext(ThemeContext);
 
   return (
