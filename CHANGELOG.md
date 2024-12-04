@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/ehsangazar/design-system/compare/v1.13.0...v1.14.0) (2024-12-04)
+
+
+### Features
+
+* remove Tailwind CSS integration and simplify Box, Flex, and Grid components ([350bcfc](https://github.com/ehsangazar/design-system/commit/350bcfc0aa65fe2c3b2a15cd9fac24609b04ed20))
+
 # [1.13.0](https://github.com/ehsangazar/design-system/compare/v1.12.0...v1.13.0) (2024-12-04)
 
 
