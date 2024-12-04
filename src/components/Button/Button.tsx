@@ -22,7 +22,7 @@ export interface ButtonProps extends RadixButtonProps {
   py?: string;
   padding?: string;
   margin?: string;
-  colorScheme?: string;
+  colorScheme?: RadixButtonProps["color"];
   isActive?: boolean;
   isDisabled?: boolean;
   isLoading?: boolean;
@@ -33,10 +33,6 @@ const Button = ({ children, ...rest }: ButtonProps) => {
   const customStyle: React.CSSProperties = { ...rest.style };
 
   // Custom style
-  if (rest.colorScheme) {
-    customStyle.color = rest.colorScheme;
-    delete customProps.colorScheme;
-  }
   if (rest.w || rest.width) {
     customStyle.width = rest.w || rest.width;
   }
@@ -99,6 +95,10 @@ const Button = ({ children, ...rest }: ButtonProps) => {
   }
   if (rest.isLoading) {
     customProps.loading = true;
+  }
+  if (rest.colorScheme) {
+    customProps.color = rest.colorScheme;
+    delete customProps.colorScheme;
   }
 
   const newProps = {
