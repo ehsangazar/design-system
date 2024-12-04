@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/ehsangazar/design-system/compare/v1.9.0...v1.10.0) (2024-12-03)
+
+
+### Features
+
+* enhance Button component with additional padding and margin props for improved layout control ([f0f690e](https://github.com/ehsangazar/design-system/commit/f0f690ee100d96bb946da498f159757e32945258))
+* make padding prop optional in Button component for greater flexibility ([16dd010](https://github.com/ehsangazar/design-system/commit/16dd01045a165d520cb61fe044ddb09760670f9d))
+
 # [1.9.0](https://github.com/ehsangazar/design-system/compare/v1.8.0...v1.9.0) (2024-12-03)
 
 
