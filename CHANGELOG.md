@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/ehsangazar/design-system/compare/v1.15.0...v1.16.0) (2024-12-04)
+
+
+### Features
+
+* add Heading components (H1-H6) and supporting elements (Paragraph, Small, Label) for enhanced typography ([58132f9](https://github.com/ehsangazar/design-system/commit/58132f9f6334d11f1eab49a36b1434e70491ac3e))
+
 # [1.15.0](https://github.com/ehsangazar/design-system/compare/v1.14.0...v1.15.0) (2024-12-04)
 
 
