@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/ehsangazar/design-system/compare/v1.14.0...v1.15.0) (2024-12-04)
+
+
+### Features
+
+* refactor Theme interface to use optional properties and improve type definitions ([fbf4ea6](https://github.com/ehsangazar/design-system/commit/fbf4ea67e954cd9a4ce1875b80c799c4f7e7d374))
+
 # [1.14.0](https://github.com/ehsangazar/design-system/compare/v1.13.0...v1.14.0) (2024-12-04)
 
 
