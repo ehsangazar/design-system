@@ -17,7 +17,7 @@ const meta: Meta<typeof Button> = {
     },
     size: {
       control: "select",
-      options: ["xs", "sm", "md", "lg", "xl"],
+      options: ["1", "2", "3", "4"],
     },
     highContrast: {
       control: "boolean",
@@ -35,9 +35,6 @@ const meta: Meta<typeof Button> = {
     },
     onClick: {
       action: "clicked",
-    },
-    w: {
-      control: "text",
     },
   },
   parameters: {
@@ -70,21 +67,21 @@ export const Default: Story = {
 export const Large: Story = {
   args: {
     children: "Button",
-    size: "xl",
+    size: "2",
   },
 };
 
 export const Medium: Story = {
   args: {
     children: "Button",
-    size: "lg",
+    size: "3",
   },
 };
 
 export const Small: Story = {
   args: {
     children: "Button",
-    size: "xs",
+    size: "1",
   },
 };
 
