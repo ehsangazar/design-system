@@ -267,12 +267,36 @@ export const Default: Story = {
   },
   render: ({ ...rest }) => (
     <Grid gap="3" {...rest}>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
     </Grid>
   ),
 };
@@ -286,12 +310,36 @@ export const WithPadding: Story = {
   },
   render: ({ ...rest }) => (
     <Grid {...rest}>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
     </Grid>
   ),
 };
@@ -305,12 +353,36 @@ export const WithMargin: Story = {
   },
   render: ({ ...rest }) => (
     <Grid {...rest}>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
     </Grid>
   ),
 };
@@ -324,12 +396,36 @@ export const WithCustomWidth: Story = {
   },
   render: ({ ...rest }) => (
     <Grid {...rest}>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
-      <Box width="100%" height="100%" className="bg-blue-500"></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
+      <Box
+        width="100px"
+        height="100px"
+        style={{ backgroundColor: "red" }}
+      ></Box>
     </Grid>
   ),
 };
