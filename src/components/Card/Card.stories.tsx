@@ -15,6 +15,9 @@ const meta: Meta<typeof Card> = {
     children: {
       control: "text",
     },
+    hoverEnabled: {
+      control: "boolean",
+    },
     size: {
       control: "select",
       options: ["1", "2", "3", "4", "5"],
@@ -163,6 +166,32 @@ export const InsetContent = {
   render: () => (
     <Box maxWidth="240px">
       <Card size="2">
+        <Inset clip="padding-box" side="top" pb="current">
+          <ImageLazy
+            src="https://images.unsplash.com/photo-1617050318658-a9a3175e34cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+            alt="Bold typography"
+          />
+        </Inset>
+        <Text as="p" size="3">
+          <Strong>Typography</Strong> is the art and technique of arranging type
+          to make written language legible, readable and appealing when
+          displayed.
+        </Text>
+      </Card>
+    </Box>
+  ),
+};
+
+// hoverEnabled
+export const HoverEnabled = {
+  args: {
+    bg: "red",
+    hoverEnabled: true,
+    variant: "ghost",
+  },
+  render: ({ ...rest }) => (
+    <Box maxWidth="240px">
+      <Card {...rest}>
         <Inset clip="padding-box" side="top" pb="current">
           <ImageLazy
             src="https://images.unsplash.com/photo-1617050318658-a9a3175e34cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"

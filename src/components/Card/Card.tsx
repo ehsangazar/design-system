@@ -1,6 +1,6 @@
 import { Card as RadixCard } from "@radix-ui/themes";
 import type { CardProps as RadixCardProps } from "@radix-ui/themes";
-import backgroundHandler from "../../utils/backgroundHandler";
+import "./Card.css";
 export interface CardProps extends RadixCardProps {
   bg?:
     | "gray"
@@ -29,14 +29,20 @@ export interface CardProps extends RadixCardProps {
     | "jade"
     | "green"
     | "grass";
+  hoverEnabled?: boolean;
 }
 
 const Card = ({ children, ...rest }: CardProps) => {
-  rest.style = {
-    ...rest.style,
-    backgroundColor: backgroundHandler(rest.bg),
-  };
-  return <RadixCard {...rest}>{children}</RadixCard>;
+  let className = `${rest.className} Card--${rest.bg} `;
+  if (rest.hoverEnabled) {
+    className += `Card--hover Card--${rest.bg}--hover`;
+  }
+
+  return (
+    <RadixCard className={className} {...rest}>
+      {children}
+    </RadixCard>
+  );
 };
 
 export default Card;

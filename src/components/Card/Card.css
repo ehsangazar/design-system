@@ -1,0 +1,227 @@
+.Card--hover {
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.Card--gray {
+  background-color: var(--gray-4);
+}
+.Card--gray--hover:hover {
+  background-color: var(--gray-6);
+}
+
+.Card--gray-light {
+  background-color: var(--gray-3);
+}
+.Card--gray-light--hover:hover {
+    background-color: var(--gray-5);
+}
+
+.Card--gray-medium {
+    background-color: var(--gray-4);
+}
+.Card--gray-medium--hover:hover {
+    background-color: var(--gray-6);
+}
+
+.Card--gray-dark {
+    background-color: var(--gray-6);
+}
+.Card--gray-dark--hover:hover {
+    background-color: var(--gray-8);
+}
+
+.Card--gold {
+    background-color: var(--gold-3);
+}
+.Card--gold--hover:hover {
+    background-color: var(--gold-5);
+}
+
+.Card--bronze {
+    background-color: var(--bronze-3);
+}
+.Card--bronze--hover:hover {
+    background-color: var(--bronze-5);
+}
+
+.Card--brown {
+    background-color: var(--brown-3);
+}
+.Card--brown--hover:hover {
+    background-color: var(--brown-5);
+}
+
+.Card--yellow {
+    background-color: var(--yellow-3);
+}
+.Card--yellow--hover:hover {
+    background-color: var(--yellow-5);
+}
+
+.Card--amber {
+    background-color: var(--amber-3);
+}
+.Card--amber--hover:hover {
+    background-color: var(--amber-5);
+}
+
+.Card--orange {
+    background-color: var(--orange-3);
+}
+.Card--orange--hover:hover {
+    background-color: var(--orange-5);
+}
+
+.Card--tomato {
+    background-color: var(--tomato-3);
+}
+.Card--tomato--hover:hover {
+    background-color: var(--tomato-5);
+}
+
+.Card--red {
+    background-color: var(--red-3);
+}
+.Card--red--hover:hover {
+    background-color: var(--red-5);
+}
+
+.Card--ruby {
+    background-color: var(--ruby-3);
+}
+.Card--ruby--hover:hover {
+    background-color: var(--ruby-5);
+}
+
+.Card--crimson {
+    background-color: var(--crimson-3);
+}
+.Card--crimson--hover:hover {
+    background-color: var(--crimson-5);
+}
+
+.Card--pink {
+    background-color: var(--pink-3);
+}
+.Card--pink--hover:hover {
+    background-color: var(--pink-5);
+}
+
+.Card--plum {
+    background-color: var(--plum-3);
+}
+.Card--plum--hover:hover {
+    background-color: var(--plum-5);
+}
+
+.Card--purple {
+    background-color: var(--purple-3);
+}
+.Card--purple--hover:hover {
+    background-color: var(--purple-5);
+}
+
+.Card--violet {
+    background-color: var(--violet-3);
+}
+.Card--violet--hover:hover {
+    background-color: var(--violet-5);
+}
+
+.Card--lavender {
+    background-color: var(--lavender-3);
+}
+.Card--iris--hover:hover {
+    background-color: var(--iris-5);
+}
+
+.Card--indigo {
+    background-color: var(--indigo-3);
+}
+.Card--indigo--hover:hover {
+    background-color: var(--indigo-5);
+}
+
+.Card--blue {
+    background-color: var(--blue-3);
+}
+.Card--blue--hover:hover {
+    background-color: var(--blue-5);
+}
+
+.Card--sky {
+    background-color: var(--sky-3);
+}
+.Card--sky--hover:hover {
+    background-color: var(--sky-5);
+}
+
+.Card--cyan {
+    background-color: var(--cyan-3);
+}
+.Card--cyan--hover:hover {
+    background-color: var(--cyan-5);
+}
+
+.Card--teal {
+    background-color: var(--teal-3);
+}
+.Card--teal--hover:hover {
+    background-color: var(--teal-5);
+}
+
+.Card--jade {
+    background-color: var(--mint-3);
+}
+.Card--jade--hover:hover {
+    background-color: var(--jade-5);
+}
+
+.Card--green {
+    background-color: var(--green-3);
+}
+.Card--green--hover:hover {
+    background-color: var(--green-5);
+}
+
+.Card--grass {
+    background-color: var(--grass-3);
+}
+.Card--grass--hover:hover {
+    background-color: var(--grass-5);
+}
+
+.Card--sage {
+    background-color: var(--sage-3);
+}
+.Card--sage--hover:hover {
+    background-color: var(--sage-5);
+}
+
+.Card--olive {
+    background-color: var(--olive-3);
+}
+.Card--olive--hover:hover {
+    background-color: var(--olive-5);
+}
+
+.Card--sand {
+    background-color: var(--sand-3);
+}
+.Card--sand--hover:hover {
+    background-color: var(--sand-5);
+}
+
+.Card--slate {
+    background-color: var(--slate-3);
+}
+.Card--slate--hover:hover {
+    background-color: var(--slate-5);
+}
+
+.Card--mauve {
+    background-color: var(--navy-3);
+}
+.Card--mauve--hover:hover {
+    background-color: var(--mauve-5);
+}
