@@ -1,47 +1,60 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Accordion from "./Accordion";
-import { ChevronDownIcon } from "@radix-ui/themes";
 
 interface AccordionDemoProps {
-  type: "single";
-  value: string;
-  defaultValue: string;
-  onValueChange: (value: string) => void;
-  collapsible: boolean;
-  disabled: boolean;
-  orientation: "horizontal" | "vertical";
+  bg?:
+    | "gray"
+    | "gray-light"
+    | "gray-medium"
+    | "gray-dark"
+    | "gold"
+    | "bronze"
+    | "brown"
+    | "yellow"
+    | "amber"
+    | "orange"
+    | "tomato"
+    | "red"
+    | "ruby"
+    | "crimson"
+    | "pink"
+    | "plum"
+    | "purple"
+    | "violet"
+    | "iris"
+    | "indigo"
+    | "blue"
+    | "cyan"
+    | "teal"
+    | "jade"
+    | "green"
+    | "grass";
 }
 
 const AccordionDemo = (props: AccordionDemoProps) => {
   return (
     <Accordion.Root {...props}>
-      <Accordion.Item value="item-1">
+      <Accordion.Item>
         <Accordion.Header>
-          <Accordion.Trigger className="AccordionTrigger">
-            Lorem ipsum dolor sit amet consectetur
-            <ChevronDownIcon className="AccordionChevron" aria-hidden />
-          </Accordion.Trigger>
+          Lorem ipsum dolor sit amet consectetur
         </Accordion.Header>
-        <Accordion.Content className="AccordionContent">
+        <Accordion.Panel>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        </Accordion.Content>
+        </Accordion.Panel>
       </Accordion.Item>
-      <Accordion.Item value="item-2">
+      <Accordion.Item>
         <Accordion.Header>
-          <Accordion.Trigger className="AccordionTrigger">
-            Lorem ipsum dolor sit amet consectetur
-            <ChevronDownIcon className="AccordionChevron" aria-hidden />
-          </Accordion.Trigger>
+          Lorem ipsum dolor sit amet consectetur
         </Accordion.Header>
-        <Accordion.Content className="AccordionContent">
+        <Accordion.Panel>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        </Accordion.Content>
+        </Accordion.Panel>
       </Accordion.Item>
     </Accordion.Root>
   );
@@ -51,24 +64,36 @@ const meta: Meta<typeof AccordionDemo> = {
   title: "Components/Accordion",
   component: AccordionDemo,
   argTypes: {
-    value: {
-      control: "text",
-    },
-    defaultValue: {
-      control: "text",
-    },
-    onValueChange: {
-      action: "onValueChange",
-    },
-    collapsible: {
-      control: "boolean",
-    },
-    disabled: {
-      control: "boolean",
-    },
-    orientation: {
+    bg: {
       control: "select",
-      options: ["horizontal", "vertical"],
+      options: [
+        "gray",
+        "gray-light",
+        "gray-medium",
+        "gray-dark",
+        "gold",
+        "bronze",
+        "brown",
+        "yellow",
+        "amber",
+        "orange",
+        "tomato",
+        "red",
+        "ruby",
+        "crimson",
+        "pink",
+        "plum",
+        "purple",
+        "violet",
+        "iris",
+        "indigo",
+        "blue",
+        "cyan",
+        "teal",
+        "jade",
+        "green",
+        "grass",
+      ],
     },
   },
 };
