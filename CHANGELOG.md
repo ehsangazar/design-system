@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/ehsangazar/design-system/compare/v1.20.0...v1.21.0) (2024-12-06)
+
+
+### Features
+
+* add background color support to Card component and implement backgroundHandler utility ([be24cfa](https://github.com/ehsangazar/design-system/commit/be24cfa98c45cf19f218b4bbbe5df8f03c0809c6))
+
 # [1.20.0](https://github.com/ehsangazar/design-system/compare/v1.19.0...v1.20.0) (2024-12-05)
 
 
