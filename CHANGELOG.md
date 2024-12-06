@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/ehsangazar/design-system/compare/v1.22.0...v1.22.1) (2024-12-06)
+
+
+### Bug Fixes
+
+* set default margin to 0 in Card component ([afebaa5](https://github.com/ehsangazar/design-system/commit/afebaa59397ea14e182a0155d772a1f305cfad33))
+
 # [1.22.0](https://github.com/ehsangazar/design-system/compare/v1.21.1...v1.22.0) (2024-12-06)
 
 
