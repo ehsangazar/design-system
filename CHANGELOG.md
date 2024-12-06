@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/ehsangazar/design-system/compare/v1.21.1...v1.22.0) (2024-12-06)
+
+
+### Bug Fixes
+
+* add pointer cursor style to Button component ([0c91508](https://github.com/ehsangazar/design-system/commit/0c915084defa70e8f4cc789110859152edc0e52b))
+
+
+### Features
+
+* add global styles for custom scrollbar in ThemeWrapper component ([26b2ac6](https://github.com/ehsangazar/design-system/commit/26b2ac601eedbdb52d3cd896c501cad7d143dcd0))
+
 ## [1.21.1](https://github.com/ehsangazar/design-system/compare/v1.21.0...v1.21.1) (2024-12-06)
 
 
