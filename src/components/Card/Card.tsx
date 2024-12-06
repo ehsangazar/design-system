@@ -33,9 +33,15 @@ export interface CardProps extends RadixCardProps {
 }
 
 const Card = ({ children, ...rest }: CardProps) => {
-  let className = `${rest.className} GazCard GazCard--${rest.bg} `;
+  let className = `GazCard`;
+  if (rest.bg) {
+    className += ` GazCard--${rest.bg}`;
+  }
   if (rest.hoverEnabled) {
-    className += `GazCard--hover GazCard--${rest.bg}--hover`;
+    className += ` GazCard--hover GazCard--${rest.bg}--hover`;
+  }
+  if (rest.className) {
+    className += ` ${rest.className}`;
   }
 
   return (
