@@ -14,6 +14,7 @@ export { default as CheckboxGroup } from "./components/CheckboxGroup/CheckboxGro
 export { default as Code } from "./components/Code/Code";
 export { default as Container } from "./components/Container/Container";
 export { default as ContextMenu } from "./components/ContextMenu/ContextMenu";
+export { default as Breadcrumb } from "./components/Breadcrumb/Breadcrumb";
 export { default as DataList } from "./components/DataList/DataList";
 export { default as Dialog } from "./components/Dialog/Dialog";
 export { default as DropdownMenu } from "./components/DropdownMenu/DropdownMenu";
