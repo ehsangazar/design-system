@@ -102,7 +102,5 @@ export default meta;
 type Story = StoryObj<typeof AccordionDemo>;
 
 export const Default: Story = {
-  args: {
-    type: "single",
-  },
+  args: {},
 };
