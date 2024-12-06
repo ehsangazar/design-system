@@ -102,5 +102,7 @@ export default meta;
 type Story = StoryObj<typeof AccordionDemo>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    bg: "cyan",
+  },
 };
