@@ -1,6 +1,6 @@
 *::-webkit-scrollbar {
     width: 6px;
-    background-color: var(--accent-4);
+    background-color: var(--accent-2);
     height: 6px;
 }
 *::-webkit-scrollbar-track {
@@ -8,6 +8,6 @@
 }
 *::-webkit-scrollbar-thumb {
     height: 6px;
-    background-color: var(--accent-2);
+    background-color: var(--accent-4);
     border-radius: 0px;
 }
