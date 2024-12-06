@@ -1,0 +1,270 @@
+.GazLink {
+    margin: 0;
+    width: 100%;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.GazLink--undefined {
+    color: var(--accent-a7);
+}
+
+.GazLink--undefined:hover {
+    color: var(--accent-a9);
+}
+
+.GazLink--gray {
+    color: var(--gray-7);
+}
+
+.GazLink--gray:hover {
+    color: var(--gray-9);
+}
+
+.GazLink--gray-light {
+    color: var(--gray-8);
+}
+
+.GazLink--gray-light:hover {
+    color: var(--gray-9);
+}
+
+.GazLink--gray-medium {
+    color: var(--gray-7);
+}
+
+.GazLink--gray-medium:hover {
+    color: var(--gray-8);
+}
+
+.GazLink--gray-dark {
+    color: var(--gray-4);
+}
+
+.GazLink--gray-dark:hover {
+    color: var(--gray-9);
+}
+
+.GazLink--gold {
+    color: var(--gold-7);
+}
+
+.GazLink--gold:hover {
+    color: var(--gold-9);
+}
+
+.GazLink--bronze {
+    color: var(--bronze-7);
+}
+
+.GazLink--bronze:hover {
+    color: var(--bronze-9);
+}
+
+.GazLink--brown {
+    color: var(--brown-7);
+}
+
+.GazLink--brown:hover {
+    color: var(--brown-9);
+}
+
+.GazLink--yellow {
+    color: var(--yellow-7);
+}
+
+.GazLink--yellow:hover {
+    color: var(--yellow-9);
+}
+
+.GazLink--amber {
+    color: var(--amber-7);
+}
+
+.GazLink--amber:hover {
+    color: var(--amber-9);
+}
+
+.GazLink--orange {
+    color: var(--orange-7);
+}
+
+.GazLink--orange:hover {
+    color: var(--orange-9);
+}
+
+.GazLink--tomato {
+    color: var(--tomato-7);
+}
+
+.GazLink--tomato:hover {
+    color: var(--tomato-9);
+}
+
+.GazLink--red {
+    color: var(--red-7);
+}
+
+.GazLink--red:hover {
+    color: var(--red-9);
+}
+
+.GazLink--ruby {
+    color: var(--ruby-7);
+}
+
+.GazLink--ruby:hover {
+    color: var(--ruby-9);
+}
+
+.GazLink--crimson {
+    color: var(--crimson-7);
+}
+
+.GazLink--crimson:hover {
+    color: var(--crimson-9);
+}
+
+.GazLink--pink {
+    color: var(--pink-7);
+}
+
+.GazLink--pink:hover {
+    color: var(--pink-9);
+}
+
+.GazLink--plum {
+    color: var(--plum-7);
+}
+
+.GazLink--plum:hover {
+    color: var(--plum-9);
+}
+
+.GazLink--purple {
+    color: var(--purple-7);
+}
+
+.GazLink--purple:hover {
+    color: var(--purple-9);
+}
+
+.GazLink--violet {
+    color: var(--violet-7);
+}
+
+.GazLink--violet:hover {
+    color: var(--violet-9);
+}
+
+.GazLink--lavender {
+    color: var(--lavender-7);
+}
+
+.GazLink--iris:hover {
+    color: var(--iris-9);
+}
+
+.GazLink--indigo {
+    color: var(--indigo-7);
+}
+
+.GazLink--indigo:hover {
+    color: var(--indigo-9);
+}
+
+.GazLink--blue {
+    color: var(--blue-7);
+}
+
+.GazLink--blue:hover {
+    color: var(--blue-9);
+}
+
+.GazLink--sky {
+    color: var(--sky-7);
+}
+
+.GazLink--sky:hover {
+    color: var(--sky-9);
+}
+
+.GazLink--cyan {
+    color: var(--cyan-7);
+}
+
+.GazLink--cyan:hover {
+    color: var(--cyan-9);
+}
+
+.GazLink--teal {
+    color: var(--teal-7);
+}
+
+.GazLink--teal:hover {
+    color: var(--teal-9);
+}
+
+.GazLink--jade {
+    color: var(--mint-7);
+}
+
+.GazLink--jade:hover {
+    color: var(--jade-9);
+}
+
+.GazLink--green {
+    color: var(--green-7);
+}
+
+.GazLink--green:hover {
+    color: var(--green-9);
+}
+
+.GazLink--grass {
+    color: var(--grass-7);
+}
+
+.GazLink--grass:hover {
+    color: var(--grass-9);
+}
+
+.GazLink--sage {
+    color: var(--sage-7);
+}
+
+.GazLink--sage:hover {
+    color: var(--sage-9);
+}
+
+.GazLink--olive {
+    color: var(--olive-7);
+}
+
+.GazLink--olive:hover {
+    color: var(--olive-9);
+}
+
+.GazLink--sand {
+    color: var(--sand-7);
+}
+
+.GazLink--sand:hover {
+    color: var(--sand-9);
+}
+
+.GazLink--slate {
+    color: var(--slate-7);
+}
+
+.GazLink--slate:hover {
+    color: var(--slate-9);
+}
+
+.GazLink--mauve {
+    color: var(--navy-7);
+}
+
+.GazLink--mauve:hover {
+    color: var(--mauve-9);
+}

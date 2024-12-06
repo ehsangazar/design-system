@@ -1,4 +1,4 @@
-.GazCard {
+-.GazCard {
     margin: 0;
     width: 100%;
 }
@@ -6,6 +6,14 @@
     transition: background-color 0.3s;
     cursor: pointer;
 }
+
+.GazCard--undefined--hover {
+    background-color: var(--accent-a3);
+}
+.GazCard--undefined--hover:hover {
+    background-color: var(--accent-a5);
+}
+
 .GazCard--gray {
   background-color: var(--gray-4);
 }
