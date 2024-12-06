@@ -1,19 +1,22 @@
 const borderRadiusHandler = (radius?: string) => {
   let borderRadius = "0";
-  if (radius === "none") {
-    borderRadius = "0";
-  }
-  if (radius === "small") {
-    borderRadius = "var(--radius-2)";
-  }
-  if (radius === "medium") {
-    borderRadius = "var(--radius-4)";
-  }
-  if (radius === "large") {
-    borderRadius = "var(--radius-6)";
-  }
-  if (radius === "full") {
-    borderRadius = "var(--radius-full)";
+
+  switch (radius) {
+    case "none":
+      borderRadius = "0";
+      break;
+    case "small":
+      borderRadius = "var(--radius-2)";
+      break;
+    case "medium":
+      borderRadius = "var(--radius-4)";
+      break;
+    case "large":
+      borderRadius = "var(--radius-6)";
+      break;
+    case "full":
+      borderRadius = "var(--radius-full)";
+      break;
   }
 
   return borderRadius;

@@ -6,6 +6,7 @@ import Avatar from "../Avatar/Avatar";
 import Text from "../Text/Text";
 import { Inset } from "@radix-ui/themes";
 import Strong from "../Strong/Strong";
+import ImageLazy from "../ImageLazy/ImageLazy";
 
 const meta: Meta<typeof Card> = {
   title: "Components/Card",
@@ -22,6 +23,37 @@ const meta: Meta<typeof Card> = {
       control: "select",
       options: ["surface", "classic", "ghost"],
     },
+    bg: {
+      control: "select",
+      options: [
+        "gray",
+        "gray-light",
+        "gray-medium",
+        "gray-dark",
+        "gold",
+        "bronze",
+        "brown",
+        "yellow",
+        "amber",
+        "orange",
+        "tomato",
+        "red",
+        "ruby",
+        "crimson",
+        "pink",
+        "plum",
+        "purple",
+        "violet",
+        "iris",
+        "indigo",
+        "blue",
+        "cyan",
+        "teal",
+        "jade",
+        "green",
+        "grass",
+      ],
+    },
   },
 };
 
@@ -29,9 +61,9 @@ export default meta;
 
 export const Default = {
   args: {},
-  render: () => (
+  render: ({ ...rest }) => (
     <Box maxWidth="240px">
-      <Card>
+      <Card {...rest}>
         <Flex gap="3" align="center">
           <Avatar
             size="3"
@@ -132,10 +164,9 @@ export const InsetContent = {
     <Box maxWidth="240px">
       <Card size="2">
         <Inset clip="padding-box" side="top" pb="current">
-          <img
+          <ImageLazy
             src="https://images.unsplash.com/photo-1617050318658-a9a3175e34cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
             alt="Bold typography"
-            className="display-block object-cover w-full h-140 bg-gray-5"
           />
         </Inset>
         <Text as="p" size="3">
