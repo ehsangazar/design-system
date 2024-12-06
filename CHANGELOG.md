@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/ehsangazar/design-system/compare/v1.28.0...v1.29.0) (2024-12-06)
+
+
+### Features
+
+* add Breadcrumb component with stories for demonstration ([07ef159](https://github.com/ehsangazar/design-system/commit/07ef159c62d0050db3c1b6a77556efd901f986be))
+
 # [1.28.0](https://github.com/ehsangazar/design-system/compare/v1.27.0...v1.28.0) (2024-12-06)
 
 
