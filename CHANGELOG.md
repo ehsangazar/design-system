@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/ehsangazar/design-system/compare/v1.25.0...v1.26.0) (2024-12-06)
+
+
+### Features
+
+* implement CardsList container and update Card component for improved styling and functionality ([3f90820](https://github.com/ehsangazar/design-system/commit/3f9082067c84c7caf55dc735bf33324d729ba0d7))
+
 # [1.25.0](https://github.com/ehsangazar/design-system/compare/v1.24.0...v1.25.0) (2024-12-06)
 
 
