@@ -7,6 +7,10 @@ export interface ButtonProps extends RadixButtonProps {
 }
 
 const Button = ({ children, ...rest }: ButtonProps) => {
+  rest.style = {
+    cursor: "pointer",
+    ...rest.style,
+  };
   return (
     <RadixButton {...rest}>
       {React.isValidElement(rest.leftIcon) && rest.leftIcon}
