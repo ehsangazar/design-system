@@ -1,3 +1,12 @@
+# [1.23.0](https://github.com/ehsangazar/design-system/compare/v1.22.2...v1.23.0) (2024-12-06)
+
+
+### Features
+
+* add @emotion/react dependency to package.json and package-lock.json ([1dc11e2](https://github.com/ehsangazar/design-system/commit/1dc11e235468511dd152af116938b5e44a6d4112))
+* add hover effect and sx prop support to Card component ([c321390](https://github.com/ehsangazar/design-system/commit/c3213903b58bd1a19aa5167d7c299a3f7a05d39b))
+* integrate @emotion/styled for Card component styling ([ebbe3fd](https://github.com/ehsangazar/design-system/commit/ebbe3fdaa3698da3cd237b66b3267ef67ceb1033))
+
 ## [1.22.2](https://github.com/ehsangazar/design-system/compare/v1.22.1...v1.22.2) (2024-12-06)
 
 
