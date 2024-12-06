@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/ehsangazar/design-system/compare/v1.21.0...v1.21.1) (2024-12-06)
+
+
+### Bug Fixes
+
+* correct spelling of 'appearance' in Theme interface and update background colors in backgroundHandler utility ([d66bc89](https://github.com/ehsangazar/design-system/commit/d66bc89373d20d637db77ac58be439cf79e39749))
+
 # [1.21.0](https://github.com/ehsangazar/design-system/compare/v1.20.0...v1.21.0) (2024-12-06)
 
 
