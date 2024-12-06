@@ -33,8 +33,9 @@ export interface CardProps extends RadixCardProps {
 
 const Card = ({ children, ...rest }: CardProps) => {
   rest.style = {
-    ...rest.style,
     backgroundColor: backgroundHandler(rest.bg),
+    margin: 0,
+    ...rest.style,
   };
 
   return <RadixCard {...rest}>{children}</RadixCard>;
