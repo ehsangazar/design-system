@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/ehsangazar/design-system/compare/v1.23.0...v1.24.0) (2024-12-06)
+
+
+### Features
+
+* add hover effects and enable hover functionality for Card component ([24898d6](https://github.com/ehsangazar/design-system/commit/24898d6789d50b8690091209797b829f7abdb736))
+
 # [1.23.0](https://github.com/ehsangazar/design-system/compare/v1.22.2...v1.23.0) (2024-12-06)
 
 
