@@ -1,3 +1,11 @@
+# [1.28.0](https://github.com/ehsangazar/design-system/compare/v1.27.0...v1.28.0) (2024-12-06)
+
+
+### Features
+
+* update Accordion component to support dynamic background color and change default theme appearance to dark ([5d2ab9f](https://github.com/ehsangazar/design-system/commit/5d2ab9f111ece3c79e9527824414c50b5c027563))
+* update Accordion story to include dynamic background color argument ([fa86914](https://github.com/ehsangazar/design-system/commit/fa86914ce81c6b4d3d4ca0cd6b8d3e90fbd349ba))
+
 # [1.27.0](https://github.com/ehsangazar/design-system/compare/v1.26.0...v1.27.0) (2024-12-06)
 
 
