@@ -1,3 +1,10 @@
+## [1.22.2](https://github.com/ehsangazar/design-system/compare/v1.22.1...v1.22.2) (2024-12-06)
+
+
+### Bug Fixes
+
+* update scrollbar colors in ThemeWrapper component ([e8b5c38](https://github.com/ehsangazar/design-system/commit/e8b5c38ad4b25121681effa5afd40b19c1b5c4a9))
+
 ## [1.22.1](https://github.com/ehsangazar/design-system/compare/v1.22.0...v1.22.1) (2024-12-06)
 
 
