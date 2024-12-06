@@ -1,6 +1,7 @@
 import { Card as RadixCard } from "@radix-ui/themes";
 import type { CardProps as RadixCardProps } from "@radix-ui/themes";
 import backgroundHandler from "../../utils/backgroundHandler";
+import styled from "@emotion/styled";
 export interface CardProps extends RadixCardProps {
   bg?:
     | "gray"
@@ -30,15 +31,13 @@ export interface CardProps extends RadixCardProps {
     | "green"
     | "grass";
 }
+const StyledCard = styled(RadixCard)<CardProps>`
+  background-color: ${(props) => backgroundHandler(props.bg)};
+  margin: 0;
+`;
 
 const Card = ({ children, ...rest }: CardProps) => {
-  rest.style = {
-    backgroundColor: backgroundHandler(rest.bg),
-    margin: 0,
-    ...rest.style,
-  };
-
-  return <RadixCard {...rest}>{children}</RadixCard>;
+  return <StyledCard {...rest}>{children}</StyledCard>;
 };
 
 export default Card;
