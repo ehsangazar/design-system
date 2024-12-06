@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/ehsangazar/design-system/compare/v1.19.0...v1.20.0) (2024-12-05)
+
+
+### Features
+
+* remove unused CSS files and add borderRadiusHandler utility for image components ([65226fc](https://github.com/ehsangazar/design-system/commit/65226fcfdaa0bb2fc245a8552844649f9fcffa3a))
+
 # [1.19.0](https://github.com/ehsangazar/design-system/compare/v1.18.0...v1.19.0) (2024-12-04)
 
 
