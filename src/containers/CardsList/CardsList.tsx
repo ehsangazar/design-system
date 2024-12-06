@@ -74,8 +74,12 @@ const CardList = ({
             >
               <Grid columns="1fr" align={"center"} justify={"center"} gap={"4"}>
                 <Card
+                  bg="cyan"
+                  variant="ghost"
+                  hoverEnabled
                   style={{
-                    padding: "0",
+                    padding: 0,
+                    margin: 0,
                   }}
                 >
                   <>
