@@ -40,7 +40,7 @@ interface AccordionProps {
   bg?: BgType;
 }
 
-const AccordionRoot = ({ children, bg }: AccordionProps) => {
+const AccordionRoot = ({ children, bg = "gray-light" }: AccordionProps) => {
   return (
     <Box>
       {React.Children.map(children, (child) => {
@@ -67,8 +67,9 @@ const AccordionItem = ({ children, bg }: AccordionItemProps) => {
 
   return (
     <Box
+      my={"1"}
       style={{
-        border: "1px solid var(--gray-12)",
+        border: `1px solid var(--${bg}-4)`,
         borderRadius: borderRadiusHandler(theme.radius),
         overflow: "hidden",
       }}
