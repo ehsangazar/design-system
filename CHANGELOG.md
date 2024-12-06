@@ -1,3 +1,12 @@
+# [1.27.0](https://github.com/ehsangazar/design-system/compare/v1.26.0...v1.27.0) (2024-12-06)
+
+
+### Features
+
+* refactor Accordion component to remove CSS file and implement new structure with background color support ([3090eba](https://github.com/ehsangazar/design-system/commit/3090ebae8ec9a50cc21e715bf388e19723a529dc))
+* update Accordion story to remove default args for cleaner configuration ([7764b16](https://github.com/ehsangazar/design-system/commit/7764b1661f0c0d403f82b27dda100372bf526d20))
+* update Card component styles with new background and margin adjustments ([b327760](https://github.com/ehsangazar/design-system/commit/b32776029c42f6c16cb935e673ac1adeffecf56f))
+
 # [1.26.0](https://github.com/ehsangazar/design-system/compare/v1.25.0...v1.26.0) (2024-12-06)
 
 
