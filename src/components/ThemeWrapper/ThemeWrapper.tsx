@@ -4,6 +4,7 @@ import "@radix-ui/themes/styles.css";
 import { generateShades } from "./generateShades";
 import ThemeContext from "../../contexts/ThemeContext";
 import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
+import "./global.css";
 
 export interface Theme {
   appearance?: "light" | "dark";
