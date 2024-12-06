@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/ehsangazar/design-system/compare/v1.24.0...v1.25.0) (2024-12-06)
+
+
+### Features
+
+* set width to 100% for GazCard component ([f3c4f8e](https://github.com/ehsangazar/design-system/commit/f3c4f8e58edf1c5101acd3945cee69840a09b02a))
+
 # [1.24.0](https://github.com/ehsangazar/design-system/compare/v1.23.0...v1.24.0) (2024-12-06)
 
 
