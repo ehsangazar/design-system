@@ -3,97 +3,97 @@ const backgroundHandler = (bg?: string) => {
 
   switch (bg) {
     case "gray":
-      backgroundColor = "var(--gray-6)";
+      backgroundColor = "var(--gray-4)";
       break;
     case "gray-light":
-      backgroundColor = "var(--gray-2)";
+      backgroundColor = "var(--gray-3)";
       break;
     case "gray-medium":
-      backgroundColor = "var(--gray-6)";
+      backgroundColor = "var(--gray-4)";
       break;
     case "gray-dark":
-      backgroundColor = "var(--gray-10)";
+      backgroundColor = "var(--gray-6)";
       break;
     case "gold":
-      backgroundColor = "var(--gold-6)";
+      backgroundColor = "var(--gold-3)";
       break;
     case "bronze":
-      backgroundColor = "var(--bronze-6)";
+      backgroundColor = "var(--bronze-3)";
       break;
     case "brown":
-      backgroundColor = "var(--brown-6)";
+      backgroundColor = "var(--brown-3)";
       break;
     case "yellow":
-      backgroundColor = "var(--yellow-6)";
+      backgroundColor = "var(--yellow-3)";
       break;
     case "amber":
-      backgroundColor = "var(--amber-6)";
+      backgroundColor = "var(--amber-3)";
       break;
     case "orange":
-      backgroundColor = "var(--orange-6)";
+      backgroundColor = "var(--orange-3)";
       break;
     case "tomato":
-      backgroundColor = "var(--tomato-6)";
+      backgroundColor = "var(--tomato-3)";
       break;
     case "red":
-      backgroundColor = "var(--red-6)";
+      backgroundColor = "var(--red-3)";
       break;
     case "ruby":
-      backgroundColor = "var(--ruby-6)";
+      backgroundColor = "var(--ruby-3)";
       break;
     case "crimson":
-      backgroundColor = "var(--crimson-6)";
+      backgroundColor = "var(--crimson-3)";
       break;
     case "pink":
-      backgroundColor = "var(--pink-6)";
+      backgroundColor = "var(--pink-3)";
       break;
     case "plum":
-      backgroundColor = "var(--plum-6)";
+      backgroundColor = "var(--plum-3)";
       break;
     case "purple":
-      backgroundColor = "var(--purple-6)";
+      backgroundColor = "var(--purple-3)";
       break;
     case "violet":
-      backgroundColor = "var(--violet-6)";
+      backgroundColor = "var(--violet-3)";
       break;
     case "iris":
-      backgroundColor = "var(--iris-6)";
+      backgroundColor = "var(--iris-3)";
       break;
     case "indigo":
-      backgroundColor = "var(--indigo-6)";
+      backgroundColor = "var(--indigo-3)";
       break;
     case "blue":
-      backgroundColor = "var(--blue-6)";
+      backgroundColor = "var(--blue-3)";
       break;
     case "cyan":
-      backgroundColor = "var(--cyan-6)";
+      backgroundColor = "var(--cyan-3)";
       break;
     case "teal":
-      backgroundColor = "var(--teal-6)";
+      backgroundColor = "var(--teal-3)";
       break;
     case "jade":
-      backgroundColor = "var(--jade-6)";
+      backgroundColor = "var(--jade-3)";
       break;
     case "green":
-      backgroundColor = "var(--green-6)";
+      backgroundColor = "var(--green-3)";
       break;
     case "grass":
-      backgroundColor = "var(--grass-6)";
+      backgroundColor = "var(--grass-3)";
       break;
     case "sage":
-      backgroundColor = "var(--sage-6)";
+      backgroundColor = "var(--sage-3)";
       break;
     case "olive":
-      backgroundColor = "var(--olive-6)";
+      backgroundColor = "var(--olive-3)";
       break;
     case "sand":
-      backgroundColor = "var(--sand-6)";
+      backgroundColor = "var(--sand-3)";
       break;
     case "slate":
-      backgroundColor = "var(--slate-6)";
+      backgroundColor = "var(--slate-3)";
       break;
     case "mauve":
-      backgroundColor = "var(--mauve-6)";
+      backgroundColor = "var(--mauve-3)";
       break;
     default:
       break;

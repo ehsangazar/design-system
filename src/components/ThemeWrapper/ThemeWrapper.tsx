@@ -6,7 +6,7 @@ import ThemeContext from "../../contexts/ThemeContext";
 import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
 
 export interface Theme {
-  apprearance?: "light" | "dark";
+  appearance?: "light" | "dark";
   onAccentColorChange?: (accentColor: Theme["accentColor"]) => void;
   onGrayColorChange?: (grayColor: Theme["grayColor"]) => void;
   onPanelBackgroundChange?: (panelBackground: ["solid", "translucent"]) => void;
@@ -45,7 +45,7 @@ export interface Theme {
 }
 
 const defaultTheme: Theme = {
-  apprearance: "light",
+  appearance: "light",
   onAccentColorChange: () => {},
   onGrayColorChange: () => {},
   onPanelBackgroundChange: () => {},
