@@ -16,7 +16,7 @@ export { default as Container } from "./components/Container/Container";
 export { default as ContextMenu } from "./components/ContextMenu/ContextMenu";
 export { default as Breadcrumb } from "./components/Breadcrumb/Breadcrumb";
 export { default as DataList } from "./components/DataList/DataList";
-export { default as Dialog } from "./components/Modal/Dialog";
+export { default as Modal } from "./components/Modal/Modal";
 export { default as Em } from "./components/Em/Em";
 export { default as Flex } from "./components/Flex/Flex";
 export { default as Grid } from "./components/Grid/Grid";
