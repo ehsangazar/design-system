@@ -58,3 +58,4 @@ export { default as ThemeWrapper } from "./components/ThemeWrapper/ThemeWrapper"
 export { default as Tooltip } from "./components/Tooltip/Tooltip";
 export { default as ImageLazy } from "./components/ImageLazy/ImageLazy";
 export { default as List } from "./components/List/List";
+export { default as FormControl } from "./components/FormControl/FormControl";
