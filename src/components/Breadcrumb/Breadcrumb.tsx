@@ -55,7 +55,7 @@ const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({
 };
 
 const BreadcrumbLink: React.FC<LinkProps> = ({ children, ...rest }) => (
-  <Link {...rest} color="gray">
+  <Link {...rest} color="gray" underline="none">
     {children}
   </Link>
 );

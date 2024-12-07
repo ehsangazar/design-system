@@ -19,11 +19,11 @@
 }
 
 .GazLink--gray {
-    color: var(--gray-7);
+    color: var(--gray-11);
 }
 
 .GazLink--gray:hover {
-    color: var(--gray-9);
+    color: var(--gray-12);
 }
 
 .GazLink--gray-light {
