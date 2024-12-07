@@ -2,23 +2,19 @@ import { Link as RadixLink } from "@radix-ui/themes";
 import type { LinkProps as RadixLinkProps } from "@radix-ui/themes";
 import "./Link.css";
 
-interface CustomLinkProps extends RadixLinkProps {
-  noStyle?: boolean;
-}
-
-const Link = ({ children, noStyle, ...rest }: CustomLinkProps) => {
+const Link = ({ children, ...rest }: RadixLinkProps) => {
   let className = `GazLink`;
 
-  if (!noStyle) {
+  if (rest.color) {
     className += ` GazLink--${rest.color}`;
+  }
 
-    if (rest.underline === "always") {
-      className += ` GazLink--underline`;
-    }
+  if (rest.underline === "always") {
+    className += ` GazLink--underline`;
+  }
 
-    if (rest.underline === "hover") {
-      className += ` GazLink--underlineHover`;
-    }
+  if (rest.underline === "hover") {
+    className += ` GazLink--hover`;
   }
 
   if (rest.className) {

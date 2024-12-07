@@ -66,13 +66,7 @@ const CardList = ({
               minWidth: overflowEnabled ? "300px" : "0",
             }}
           >
-            <Link
-              href={item.slug ? `${pathName}/${item.slug}` : `${pathName}`}
-              color="gray"
-              underline="none"
-              highContrast
-              noStyle
-            >
+            <a href={item.slug ? `${pathName}/${item.slug}` : `${pathName}`}>
               <Grid columns="1fr" align={"center"} justify={"center"} gap={"4"}>
                 <Card
                   bg="cyan"
@@ -115,7 +109,7 @@ const CardList = ({
                   </>
                 </Card>
               </Grid>
-            </Link>
+            </a>
           </Box>
         ))}
       </Grid>
