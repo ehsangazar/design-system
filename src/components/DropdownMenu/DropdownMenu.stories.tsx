@@ -2,56 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { COLORS } from "../../constants/COLORS";
 import DropdownMenu from "./DropdownMenu";
 import Button from "../Button/Button";
-interface DropdownMenuContent {
-  size: "1" | "2";
-  variant: "solid" | "soft";
-  color?:
-    | "gray"
-    | "gold"
-    | "bronze"
-    | "brown"
-    | "yellow"
-    | "amber"
-    | "orange"
-    | "tomato"
-    | "red"
-    | "ruby"
-    | "crimson"
-    | "pink"
-    | "plum"
-    | "purple"
-    | "violet"
-    | "iris"
-    | "indigo"
-    | "blue"
-    | "cyan"
-    | "teal"
-    | "jade"
-    | "green"
-    | "grass"
-    | "bronze"
-    | "brown"
-    | "yellow"
-    | "amber"
-    | "orange"
-    | "tomato"
-    | "red"
-    | "ruby"
-    | "crimson"
-    | "pink"
-    | "plum"
-    | "purple"
-    | "violet"
-    | "iris"
-    | "indigo"
-    | "blue"
-    | "cyan"
-    | "teal"
-    | "jade"
-    | "green"
-    | "grass";
-  highContrast: boolean;
-}
+
 const DropdownMenuDemo = () => {
   return (
     <>
