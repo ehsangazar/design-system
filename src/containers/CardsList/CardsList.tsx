@@ -71,6 +71,7 @@ const CardList = ({
               color="gray"
               underline="none"
               highContrast
+              noStyle
             >
               <Grid columns="1fr" align={"center"} justify={"center"} gap={"4"}>
                 <Card

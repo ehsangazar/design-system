@@ -1,5 +1,5 @@
 import React from "react";
-import "./Link.css";
+import "./List.css";
 
 const UL: React.FC<{ children: React.ReactNode }> = ({ children, ...rest }) => {
   return (
