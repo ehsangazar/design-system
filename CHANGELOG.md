@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/ehsangazar/design-system/compare/v1.35.0...v1.36.0) (2024-12-07)
+
+
+### Features
+
+* refactor List styles; replace GazLink with Gaz-ul and Gaz-ol for improved list presentation ([5bacb8b](https://github.com/ehsangazar/design-system/commit/5bacb8bbd8afdd93ff4487a7d655c74559628772))
+
 # [1.35.0](https://github.com/ehsangazar/design-system/compare/v1.34.0...v1.35.0) (2024-12-07)
 
 
