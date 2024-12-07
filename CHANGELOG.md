@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/ehsangazar/design-system/compare/v1.29.0...v1.30.0) (2024-12-06)
+
+
+### Features
+
+* add GazLink component with customizable styles and hover effects; update GazCard hover styles ([b4a118a](https://github.com/ehsangazar/design-system/commit/b4a118aedee9c2fc442bc0f9112f5d0674b9809c))
+
 # [1.29.0](https://github.com/ehsangazar/design-system/compare/v1.28.0...v1.29.0) (2024-12-06)
 
 
