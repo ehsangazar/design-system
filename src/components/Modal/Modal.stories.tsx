@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Dialog from "./Dialog";
+import Modal from "./Modal";
 import Text from "../Text/Text";
 import Button from "../Button/Button";
 import Flex from "../Flex/Flex";
 import { TextField } from "@radix-ui/themes";
 
-interface DialogContent {
+interface ModalContent {
   align: "start" | "center";
   size: "1" | "2" | "3" | "4";
   width: string;
@@ -16,18 +16,18 @@ interface DialogContent {
   maxHeight: string;
 }
 
-const DialogDemo = (props: DialogContent) => {
+const ModalDemo = (props: ModalContent) => {
   return (
-    <Dialog.Root {...props}>
-      <Dialog.Trigger>
+    <Modal.Root {...props}>
+      <Modal.Trigger>
         <Button>Edit profile</Button>
-      </Dialog.Trigger>
+      </Modal.Trigger>
 
-      <Dialog.Content maxWidth="450px">
-        <Dialog.Title>Edit profile</Dialog.Title>
-        <Dialog.Description size="2" mb="4">
+      <Modal.Content maxWidth="450px">
+        <Modal.Title>Edit profile</Modal.Title>
+        <Modal.Description size="2" mb="4">
           Make changes to your profile.
-        </Dialog.Description>
+        </Modal.Description>
 
         <Flex direction="column" gap="3">
           <label>
@@ -51,23 +51,23 @@ const DialogDemo = (props: DialogContent) => {
         </Flex>
 
         <Flex gap="3" mt="4" justify="end">
-          <Dialog.Close>
+          <Modal.Close>
             <Button variant="soft" color="gray">
               Cancel
             </Button>
-          </Dialog.Close>
-          <Dialog.Close>
+          </Modal.Close>
+          <Modal.Close>
             <Button>Save</Button>
-          </Dialog.Close>
+          </Modal.Close>
         </Flex>
-      </Dialog.Content>
-    </Dialog.Root>
+      </Modal.Content>
+    </Modal.Root>
   );
 };
 
-const meta: Meta<typeof DialogDemo> = {
-  title: "Components/Dialog",
-  component: DialogDemo,
+const meta: Meta<typeof ModalDemo> = {
+  title: "Components/Modal",
+  component: ModalDemo,
   argTypes: {
     align: {
       control: "select",
@@ -99,7 +99,7 @@ const meta: Meta<typeof DialogDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof DialogDemo>;
+type Story = StoryObj<typeof ModalDemo>;
 
 export const Default: Story = {
   args: {

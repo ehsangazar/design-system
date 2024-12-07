@@ -1,5 +1,5 @@
 import { Callout as RadixCallout } from "@radix-ui/themes";
 
-const Callout = RadixCallout;
+const Alert = RadixCallout;
 
-export default Callout;
+export default Alert;

@@ -1,5 +1,5 @@
 import { Dialog as RadixDialog } from "@radix-ui/themes";
 
-const Dialog = RadixDialog;
+const Modal = RadixDialog;
 
-export default Dialog;
+export default Modal;

@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Callout from "./Callout";
+import Alert from "./Alert";
 import Link from "../Link/Link";
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 import { COLORS } from "../../constants/COLORS";
 
-interface CalloutContent {
+interface AlertContent {
   size?: "1" | "2" | "3";
   variant?: "soft" | "surface" | "outline";
   color?:
@@ -55,23 +55,23 @@ interface CalloutContent {
   highContrast?: boolean;
 }
 
-const CalloutDemo = (props: CalloutContent) => {
+const AlertDemo = (props: AlertContent) => {
   return (
-    <Callout.Root {...props}>
-      <Callout.Icon>
+    <Alert.Root {...props}>
+      <Alert.Icon>
         <InfoCircledIcon />
-      </Callout.Icon>
-      <Callout.Text>
+      </Alert.Icon>
+      <Alert.Text>
         You will need <Link href="#">admin privileges</Link> to install and
         access this application.
-      </Callout.Text>
-    </Callout.Root>
+      </Alert.Text>
+    </Alert.Root>
   );
 };
 
-const meta: Meta<typeof CalloutDemo> = {
-  title: "Components/Callout",
-  component: CalloutDemo,
+const meta: Meta<typeof AlertDemo> = {
+  title: "Components/Alert",
+  component: AlertDemo,
   argTypes: {
     size: {
       control: "select",
@@ -92,7 +92,7 @@ const meta: Meta<typeof CalloutDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof CalloutDemo>;
+type Story = StoryObj<typeof AlertDemo>;
 
 export const Default: Story = {
   args: {},

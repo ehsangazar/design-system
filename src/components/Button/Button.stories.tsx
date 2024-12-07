@@ -143,14 +143,21 @@ export const Outline: Story = {
 
 export const RightIcon: Story = {
   args: {
-    children: "Button",
-    rightIcon: <MagnifyingGlassIcon />,
+    children: (
+      <>
+        Button <MagnifyingGlassIcon />
+      </>
+    ),
   },
 };
 
 export const LeftIcon: Story = {
   args: {
-    children: "Button",
-    leftIcon: <MagnifyingGlassIcon />,
+    children: (
+      <>
+        <MagnifyingGlassIcon />
+        Button
+      </>
+    ),
   },
 };
