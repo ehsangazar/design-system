@@ -1,3 +1,11 @@
+# [1.31.0](https://github.com/ehsangazar/design-system/compare/v1.30.0...v1.31.0) (2024-12-07)
+
+
+### Features
+
+* enhance GazLink styles with underline support and hover effects ([6ab2a19](https://github.com/ehsangazar/design-system/commit/6ab2a1985f4867ced6106118289f685cdfbf6f79))
+* update GazCard styles and enhance GazLink component with conditional underline classes ([fcbc739](https://github.com/ehsangazar/design-system/commit/fcbc7399e58ef6809b96c34bca221df8bacb0ea5))
+
 # [1.30.0](https://github.com/ehsangazar/design-system/compare/v1.29.0...v1.30.0) (2024-12-06)
 
 
