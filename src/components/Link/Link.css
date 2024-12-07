@@ -2,8 +2,16 @@
     margin: 0;
     width: 100%;
     transition: color 0.3s;
+    text-decoration-thickness: 3px;
     cursor: pointer;
 }
+.GazLink--underline {
+    text-decoration: underline;
+}
+.GazLink--underlineHover:hover {
+    text-decoration: underline;
+}
+
 
 .GazLink--undefined {
     color: var(--accent-a7);
