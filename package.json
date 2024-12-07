@@ -20,7 +20,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "test:unit": "jest --coverage",
+    "test:storybook": "chromatic --project-token <your-project-token>"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -52,6 +54,7 @@
     "@storybook/addon-essentials": "^8.4.6",
     "@storybook/addon-interactions": "^8.4.6",
     "@storybook/addon-onboarding": "^8.4.6",
+    "@storybook/addon-storyshots": "^7.6.20",
     "@storybook/blocks": "^8.4.6",
     "@storybook/react": "^8.4.6",
     "@storybook/react-vite": "^8.4.6",
