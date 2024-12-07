@@ -126,7 +126,7 @@ export const defaultTypography: Record<
     size: "2",
   },
   small: {
-    size: "2",
+    size: "1",
   },
 };
 
