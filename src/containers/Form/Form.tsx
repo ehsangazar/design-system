@@ -6,6 +6,8 @@ import Box from "../../components/Box/Box";
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Alert from "../../components/Alert/Alert";
+import { IconJarLogoIcon } from "@radix-ui/react-icons";
 
 const schema = yup.object({
   firstName: yup.string().required("First name is required"),
@@ -60,6 +62,17 @@ const Form = () => {
         errorMessage={errors.password?.message}
         component={<Input {...register("password")} />}
       />
+      <Box pt={"2"}>
+        <Alert.Root variant="soft" color="amber" size="2">
+          <Alert.Icon>
+            <IconJarLogoIcon width={"20px"} height={"20px"} />
+          </Alert.Icon>
+          <Alert.Text>
+            You have reached the limit of 5 free articles. Please sign up to
+            continue reading.
+          </Alert.Text>
+        </Alert.Root>
+      </Box>
       <Box pt={"4"}>
         <Button type="submit">Submit</Button>
       </Box>
