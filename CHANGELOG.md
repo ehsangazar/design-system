@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/ehsangazar/design-system/compare/v1.31.0...v1.32.0) (2024-12-07)
+
+
+### Features
+
+* add List component with styled unordered and ordered lists ([0a38782](https://github.com/ehsangazar/design-system/commit/0a38782cacf4eac726d9529c0bc5bdcedf8d2ee3))
+
 # [1.31.0](https://github.com/ehsangazar/design-system/compare/v1.30.0...v1.31.0) (2024-12-07)
 
 
