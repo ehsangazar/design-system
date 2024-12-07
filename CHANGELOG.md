@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/ehsangazar/design-system/compare/v1.34.0...v1.35.0) (2024-12-07)
+
+
+### Features
+
+* update BreadcrumbLink styles; remove underline and adjust color properties ([12949d0](https://github.com/ehsangazar/design-system/commit/12949d0727178e10d7f135aa58d91bebea13c4e2))
+
 # [1.34.0](https://github.com/ehsangazar/design-system/compare/v1.33.0...v1.34.0) (2024-12-07)
 
 
