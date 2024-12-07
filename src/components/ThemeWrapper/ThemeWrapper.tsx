@@ -38,7 +38,6 @@ export interface Theme {
     | "green"
     | "grass";
   grayColor?: "auto" | "gray" | "mauve" | "slate" | "sage" | "olive" | "sand";
-  resolvedGrayColor?: "gray" | "mauve" | "slate" | "sage" | "olive" | "sand";
   panelBackground?: "solid" | "translucent";
   radius?: "small" | "medium" | "large" | "none" | "full";
   scaling?: "90%" | "95%" | "100%" | "105%" | "110%";
@@ -54,7 +53,6 @@ const defaultTheme: Theme = {
   onScalingChange: () => {},
   accentColor: "cyan",
   grayColor: "sand",
-  resolvedGrayColor: "sand",
   panelBackground: "solid",
   radius: "medium",
   scaling: "100%",

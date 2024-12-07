@@ -4,6 +4,7 @@ import { COLORS } from "../../constants/COLORS";
 import { expect } from "@storybook/test";
 import { jest } from "@storybook/jest";
 import { within } from "@testing-library/react";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -35,6 +36,12 @@ const meta: Meta<typeof Button> = {
     },
     onClick: {
       action: "clicked",
+    },
+    rightIcon: {
+      control: "text",
+    },
+    leftIcon: {
+      control: "text",
     },
   },
   parameters: {
@@ -131,5 +138,19 @@ export const Outline: Story = {
   args: {
     children: "Button",
     variant: "outline",
+  },
+};
+
+export const RightIcon: Story = {
+  args: {
+    children: "Button",
+    rightIcon: <MagnifyingGlassIcon />,
+  },
+};
+
+export const LeftIcon: Story = {
+  args: {
+    children: "Button",
+    leftIcon: <MagnifyingGlassIcon />,
   },
 };

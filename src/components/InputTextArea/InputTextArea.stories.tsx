@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import TextArea from "./TextArea";
+import InputTextArea from "./InputTextArea";
 import { COLORS } from "../../constants/COLORS";
 
-const meta: Meta<typeof TextArea> = {
-  component: TextArea,
+const meta: Meta<typeof InputTextArea> = {
+  component: InputTextArea,
   argTypes: {
     variant: {
       control: "select",
@@ -39,7 +39,7 @@ const meta: Meta<typeof TextArea> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof TextArea>;
+type Story = StoryObj<typeof InputTextArea>;
 
 export const Default: Story = {
   args: {
