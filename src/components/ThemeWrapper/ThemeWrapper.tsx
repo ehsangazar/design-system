@@ -178,23 +178,3 @@ const ThemeWrapper = ({
 };
 
 export default ThemeWrapper;
-
-// --space-1: calc(4px* var(--scaling));
-//     --space-2: calc(8px* var(--scaling));
-//     --space-3: calc(12px* var(--scaling));
-//     --space-4: calc(16px* var(--scaling));
-//     --space-5: calc(24px* var(--scaling));
-//     --space-6: calc(32px* var(--scaling));
-//     --space-7: calc(40px* var(--scaling));
-//     --space-8: calc(48px* var(--scaling));
-//     --space-9: calc(64px* var(--scaling));
-//     --container-1: 448px;
-//     --container-2: 688px;
-//     --container-3: 880px;
-//     --container-4: 1136px;
-// --radius-1: calc(3px* var(--scaling)* var(--radius-factor));
-// --radius-2: calc(4px* var(--scaling)* var(--radius-factor));
-// --radius-3: calc(6px* var(--scaling)* var(--radius-factor));
-// --radius-4: calc(8px* var(--scaling)* var(--radius-factor));
-// --radius-5: calc(12px* var(--scaling)* var(--radius-factor));
-// --radius-6:
