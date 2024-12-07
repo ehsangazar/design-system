@@ -37,12 +37,6 @@ const meta: Meta<typeof Button> = {
     onClick: {
       action: "clicked",
     },
-    rightIcon: {
-      control: "text",
-    },
-    leftIcon: {
-      control: "text",
-    },
   },
   parameters: {
     docs: {
