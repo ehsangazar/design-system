@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/ehsangazar/design-system/compare/v1.38.0...v1.39.0) (2024-12-07)
+
+
+### Features
+
+* implement Form component with validation and FormControl for input handling ([936d73c](https://github.com/ehsangazar/design-system/commit/936d73cda2ef9d85af4f0c31f4137c0f801395a9))
+
 # [1.38.0](https://github.com/ehsangazar/design-system/compare/v1.37.0...v1.38.0) (2024-12-07)
 
 
