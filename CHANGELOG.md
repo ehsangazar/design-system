@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/ehsangazar/design-system/compare/v1.39.0...v1.40.0) (2024-12-07)
+
+
+### Features
+
+* enhance InputTextArea component with forwardRef support ([a380db3](https://github.com/ehsangazar/design-system/commit/a380db3a126a7bba3adaf9ff7a8aa2fc9d9e98fc))
+
 # [1.39.0](https://github.com/ehsangazar/design-system/compare/v1.38.0...v1.39.0) (2024-12-07)
 
 
