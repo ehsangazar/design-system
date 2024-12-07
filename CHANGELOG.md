@@ -1,3 +1,11 @@
+# [1.34.0](https://github.com/ehsangazar/design-system/compare/v1.33.0...v1.34.0) (2024-12-07)
+
+
+### Features
+
+* refactor Link component styles and functionality; remove unused styles and update hover effects ([badcba5](https://github.com/ehsangazar/design-system/commit/badcba58f7d0eaada5410b21ad0b6a450bdddcf4))
+* remove unused Link import from CardsList component ([d2152da](https://github.com/ehsangazar/design-system/commit/d2152dad00f55d7ab64859aa6e57948dd2e2e058))
+
 # [1.33.0](https://github.com/ehsangazar/design-system/compare/v1.32.0...v1.33.0) (2024-12-07)
 
 
