@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/ehsangazar/design-system/compare/v1.36.0...v1.37.0) (2024-12-07)
+
+
+### Features
+
+* remove Select and DropdownMenu components; clean up unused dependencies ([7856b3a](https://github.com/ehsangazar/design-system/commit/7856b3a1fede887fe83fa57b27706bb59a755703))
+
 # [1.36.0](https://github.com/ehsangazar/design-system/compare/v1.35.0...v1.36.0) (2024-12-07)
 
 
