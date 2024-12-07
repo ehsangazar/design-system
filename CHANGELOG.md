@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/ehsangazar/design-system/compare/v1.40.0...v1.41.0) (2024-12-07)
+
+
+### Features
+
+* add FormControl component export to index ([f76bb79](https://github.com/ehsangazar/design-system/commit/f76bb79240bbab2925842783079f45c4210b02ae))
+
 # [1.40.0](https://github.com/ehsangazar/design-system/compare/v1.39.0...v1.40.0) (2024-12-07)
 
 
