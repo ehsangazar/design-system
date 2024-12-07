@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/ehsangazar/design-system/compare/v1.41.0...v1.42.0) (2024-12-07)
+
+
+### Features
+
+* add husky for Git hooks and update package-lock.json ([dcb38a7](https://github.com/ehsangazar/design-system/commit/dcb38a70cc2bb3daab1ddba815d0e02aba6db1b2))
+
 # [1.41.0](https://github.com/ehsangazar/design-system/compare/v1.40.0...v1.41.0) (2024-12-07)
 
 
