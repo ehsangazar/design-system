@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/ehsangazar/design-system/compare/v1.32.0...v1.33.0) (2024-12-07)
+
+
+### Features
+
+* update GazLink component to support noStyle prop and enhance underline styles; replace Link.css with List.css ([3e1bdee](https://github.com/ehsangazar/design-system/commit/3e1bdee6f10bfb178213995193493c173a73ac19))
+
 # [1.32.0](https://github.com/ehsangazar/design-system/compare/v1.31.0...v1.32.0) (2024-12-07)
 
 
