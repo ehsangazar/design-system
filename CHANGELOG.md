@@ -1,3 +1,13 @@
+# [1.38.0](https://github.com/ehsangazar/design-system/compare/v1.37.0...v1.38.0) (2024-12-07)
+
+
+### Features
+
+* rename Dialog and Callout components to Modal and Alert; remove Inset component ([4f0d099](https://github.com/ehsangazar/design-system/commit/4f0d09915c43343f236b4a37f028441b6e601f95))
+* rename Dialog export to Modal in index.ts ([5eeb4e2](https://github.com/ehsangazar/design-system/commit/5eeb4e24d7783e744b7a479f1f654eb3285b1ea5))
+* replace TextArea and TextField components with Input and InputTextArea; add DropdownMenu component ([356e13c](https://github.com/ehsangazar/design-system/commit/356e13ceaa068dbcbfcc173bb9001c975a7e812b))
+* uncomment shade generation logic in generateShades function ([1312d6a](https://github.com/ehsangazar/design-system/commit/1312d6a078f46b24abf6cd5f9f14a194ac721d8b))
+
 # [1.37.0](https://github.com/ehsangazar/design-system/compare/v1.36.0...v1.37.0) (2024-12-07)
 
 
