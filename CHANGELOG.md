@@ -1,3 +1,10 @@
+# [1.43.0](https://github.com/ehsangazar/design-system/compare/v1.42.0...v1.43.0) (2024-12-07)
+
+
+### Features
+
+* add Storyshots for visual regression testing and update package.json scripts ([8b66688](https://github.com/ehsangazar/design-system/commit/8b666885d8cfeb6663281b1238d9b404b73d11e4))
+
 # [1.42.0](https://github.com/ehsangazar/design-system/compare/v1.41.0...v1.42.0) (2024-12-07)
 
 
