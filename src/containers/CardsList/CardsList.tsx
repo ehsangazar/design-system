@@ -6,7 +6,6 @@ import Grid from "../../components/Grid/Grid";
 import Heading4 from "../../components/Heading/Heading4";
 import Paragraph from "../../components/Heading/Paragraph";
 import ImageLazy from "../../components/ImageLazy/ImageLazy";
-import Link from "../../components/Link/Link";
 
 interface Item {
   id: number;
