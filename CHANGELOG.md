@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/ehsangazar/design-system/compare/v1.48.0...v1.49.0) (2024-12-08)
+
+
+### Features
+
+* add MenuBar and ClientOnly components, integrate react-toastify for notifications ([652a3b7](https://github.com/ehsangazar/design-system/commit/652a3b76a0bde2f35654027464804da4df58d81d))
+
 # [1.48.0](https://github.com/ehsangazar/design-system/compare/v1.47.0...v1.48.0) (2024-12-08)
 
 
