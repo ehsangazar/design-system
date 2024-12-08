@@ -1,3 +1,11 @@
+# [1.47.0](https://github.com/ehsangazar/design-system/compare/v1.46.0...v1.47.0) (2024-12-08)
+
+
+### Features
+
+* enhance InputDropdown styles and add theme support in Storybook ([e38ec65](https://github.com/ehsangazar/design-system/commit/e38ec658c8d431d4257398e916de0d7912f0d6b1))
+* update Card component to use hoverEnabled prop directly ([4103157](https://github.com/ehsangazar/design-system/commit/41031577428040bed1da409191cc9eae33a5b636))
+
 # [1.46.0](https://github.com/ehsangazar/design-system/compare/v1.45.0...v1.46.0) (2024-12-08)
 
 
