@@ -1,3 +1,15 @@
+# [1.44.0](https://github.com/ehsangazar/design-system/compare/v1.43.0...v1.44.0) (2024-12-07)
+
+
+### Bug Fixes
+
+* update pre-commit hook to run only linting ([1e1eb29](https://github.com/ehsangazar/design-system/commit/1e1eb29ef10fbd14ab2e501ceb796a47904e21b9))
+
+
+### Features
+
+* add pre-commit and pre-push hooks for linting and testing ([9e06ef8](https://github.com/ehsangazar/design-system/commit/9e06ef8a1706e4617334e12aa87f49920860ff27))
+
 # [1.43.0](https://github.com/ehsangazar/design-system/compare/v1.42.0...v1.43.0) (2024-12-07)
 
 
