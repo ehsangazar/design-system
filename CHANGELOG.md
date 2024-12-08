@@ -1,3 +1,15 @@
+# [1.50.0](https://github.com/ehsangazar/design-system/compare/v1.49.0...v1.50.0) (2024-12-08)
+
+
+### Bug Fixes
+
+* **MenuBar:** update component reference in stories to MenuBar.Root ([ff59aa0](https://github.com/ehsangazar/design-system/commit/ff59aa07eacc03bd8da0303d284608225bf96691))
+
+
+### Features
+
+* implement MenuBar component with styling and dropdown functionality ([b972ced](https://github.com/ehsangazar/design-system/commit/b972ced6bdb5439d0ccb03f5b7a2b988e83618eb))
+
 # [1.49.0](https://github.com/ehsangazar/design-system/compare/v1.48.0...v1.49.0) (2024-12-08)
 
 
