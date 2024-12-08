@@ -32,12 +32,12 @@ export interface CardProps extends RadixCardProps {
   hoverEnabled?: boolean;
 }
 
-const Card = ({ children, ...rest }: CardProps) => {
+const Card = ({ children, hoverEnabled, ...rest }: CardProps) => {
   let className = `GazCard`;
   if (rest.bg) {
     className += ` GazCard--${rest.bg}`;
   }
-  if (rest.hoverEnabled) {
+  if (hoverEnabled) {
     className += ` GazCard--hover GazCard--${rest.bg}--hover`;
   }
   if (rest.className) {
