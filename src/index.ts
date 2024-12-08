@@ -62,6 +62,7 @@ export { default as List } from "./components/List/List";
 export { default as FormControl } from "./components/FormControl/FormControl";
 export { default as ClientOnly } from "./components/ClientOnly/ClientOnly";
 export { default as MenuBar } from "./components/MenuBar/MenuBar";
+export { default as DropdownMenu } from "./components/DropdownMenu/DropdownMenu";
 
 // utils
 export { toast } from "react-toastify";
