@@ -2,17 +2,11 @@ import Select from "react-select";
 import { Props as SelectProps } from "react-select";
 import React from "react";
 
-const InputDropdown = React.forwardRef<Select, SelectProps>((props, ref) => {
-  const setRef = (instance: unknown) => {
-    if (instance) {
-      (ref as React.MutableRefObject<Select>).current = instance as Select;
-      (instance as unknown as HTMLInputElement).focus();
-    }
-  };
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const InputDropdown = React.forwardRef<any, SelectProps>((props, ref) => {
   return (
     <Select
-      ref={setRef}
+      ref={ref}
       {...props}
       styles={{
         control: (styles) => {
@@ -30,7 +24,6 @@ const InputDropdown = React.forwardRef<Select, SelectProps>((props, ref) => {
         },
       }}
       theme={(themeSelect) => {
-        console.log("debug themeSelect", themeSelect);
         return {
           ...themeSelect,
           colors: {

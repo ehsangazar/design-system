@@ -23,12 +23,20 @@ const schema = yup.object({
     .email("Must be a valid email")
     .required("Email is required"),
   description: yup.string().required("Description is required"),
-  department: yup.string().required("Department is required"),
+  department: yup.object().required("Department is required"),
 });
+
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+];
 
 const Form = () => {
   const {
     register,
+    setValue,
+    trigger,
     handleSubmit,
     formState: { errors },
   } = useForm({
@@ -78,18 +86,16 @@ const Form = () => {
         errorMessage={errors.department?.message}
         component={
           <InputDropdown
-            options={[
-              { value: "chocolate", label: "Chocolate" },
-              { value: "strawberry", label: "Strawberry" },
-              { value: "vanilla", label: "Vanilla" },
-            ]}
-            onChange={(newValue) =>
-              register("department").onChange({
-                target: { value: (newValue as { value: string }).value },
-              })
-            }
-            onBlur={register("department").onBlur}
-            ref={register("department").ref}
+            options={options}
+            onChange={(newValue) => {
+              setValue(
+                "department",
+                newValue as { value: string; label: string }
+              );
+            }}
+            onBlur={() => {
+              trigger("department");
+            }}
           />
         }
       />
