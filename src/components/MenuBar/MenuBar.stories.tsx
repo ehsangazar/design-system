@@ -4,7 +4,7 @@ import Box from "../Box/Box";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import Button from "../Button/Button";
 
-const meta: Meta<typeof MenuBar> = {
+const meta: Meta<typeof MenuBar.Root> = {
   title: "Components/MenuBar",
   component: MenuBar.Root,
   argTypes: {},
