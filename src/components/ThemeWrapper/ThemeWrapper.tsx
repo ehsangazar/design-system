@@ -5,6 +5,8 @@ import { generateShades } from "./generateShades";
 import ThemeContext from "../../contexts/ThemeContext";
 import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
 import "./global.css";
+import { ToastContainer, ToastPosition } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export interface Theme {
   appearance?: "light" | "dark";
@@ -130,11 +132,18 @@ export const defaultTypography: Record<
   },
 };
 
+const defaultToastConfig = {
+  position: "top-right" as ToastPosition,
+  autoClose: 5000,
+  rtl: false,
+};
+
 const ThemeWrapper = ({
   children,
   customTheme,
   customColors,
   customTypography,
+  customToastConfig,
 }: {
   children: ReactNode;
   customTheme?: Theme;
@@ -145,6 +154,11 @@ const ThemeWrapper = ({
       size: Responsive<"7" | "6" | "5" | "4" | "3" | "2" | "1" | "8" | "9">;
     }
   >;
+  customToastConfig?: {
+    position?: ToastPosition;
+    autoClose?: number;
+    rtl?: boolean;
+  };
 }) => {
   const theme: Theme = { ...defaultTheme, ...customTheme };
   const colors = { ...defaultColors, ...customColors };
@@ -162,17 +176,32 @@ const ThemeWrapper = ({
 
   const typography = { ...defaultTypography, ...customTypography };
 
+  const toastConfig = { ...defaultToastConfig, ...customToastConfig };
+
   return (
     <ThemeContext.Provider
       value={{
         theme,
         colors,
         typography,
+        toastConfig,
       }}
     >
       <div className="ThemeWrapper" style={style}>
         <RadixTheme {...theme}>{children}</RadixTheme>
       </div>
+      <ToastContainer
+        position={toastConfig.position}
+        autoClose={toastConfig.autoClose}
+        hideProgressBar={false}
+        newestOnTop={false}
+        rtl={toastConfig.rtl}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme={theme.appearance}
+      />
     </ThemeContext.Provider>
   );
 };
