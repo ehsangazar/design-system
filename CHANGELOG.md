@@ -1,3 +1,11 @@
+# [1.45.0](https://github.com/ehsangazar/design-system/compare/v1.44.0...v1.45.0) (2024-12-08)
+
+
+### Features
+
+* add alert for article limit notification in form component ([59eb4d2](https://github.com/ehsangazar/design-system/commit/59eb4d260d3bb2ebd20840a948fe1e3c195083c2))
+* add InputDropdown component and integrate into Form with validation ([f6df174](https://github.com/ehsangazar/design-system/commit/f6df174125fe9fe729f16f9850aea2d13323e99d))
+
 # [1.44.0](https://github.com/ehsangazar/design-system/compare/v1.43.0...v1.44.0) (2024-12-07)
 
 
