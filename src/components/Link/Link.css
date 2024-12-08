@@ -4,8 +4,8 @@
     transition: color 0.3s;
     text-decoration-thickness: 3px;
     cursor: pointer;
-    color: var(--accent-a7);
-    text-decoration-color: var(--accent-a7);
+    color: var(--accent-a12);
+    text-decoration-color: var(--accent-a12);
 }
 .GazLink:hover {
     color: var(--accent-a9);
