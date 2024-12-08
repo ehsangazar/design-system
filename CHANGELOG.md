@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/ehsangazar/design-system/compare/v1.45.0...v1.46.0) (2024-12-08)
+
+
+### Features
+
+* refactor InputDropdown component and update Form to use new options structure ([4bf27c9](https://github.com/ehsangazar/design-system/commit/4bf27c99b2c884873cbc9ad45a75fa5fe3810168))
+
 # [1.45.0](https://github.com/ehsangazar/design-system/compare/v1.44.0...v1.45.0) (2024-12-08)
 
 
