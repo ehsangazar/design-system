@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/ehsangazar/design-system/compare/v1.50.0...v1.51.0) (2024-12-08)
+
+
+### Features
+
+* add DropdownMenu component export to index ([5c81b1f](https://github.com/ehsangazar/design-system/commit/5c81b1fa2e242cfedaa048dff97a0668d7f93d8b))
+
 # [1.50.0](https://github.com/ehsangazar/design-system/compare/v1.49.0...v1.50.0) (2024-12-08)
 
 
