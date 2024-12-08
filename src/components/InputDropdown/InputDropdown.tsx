@@ -44,6 +44,12 @@ const InputDropdown = React.forwardRef<any, SelectProps>((props, ref) => {
             color: "var(--gray-12)",
           };
         },
+        multiValue: (styles) => {
+          return {
+            ...styles,
+            background: "var(--focus-9)",
+          };
+        },
       }}
       theme={(themeSelect) => {
         return {

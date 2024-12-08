@@ -24,6 +24,7 @@ const schema = yup.object({
     .required("Email is required"),
   description: yup.string().required("Description is required"),
   department: yup.object().required("Department is required"),
+  colors: yup.object().required("Colors is required"),
 });
 
 const options = [
@@ -95,6 +96,29 @@ const Form = () => {
             }}
             onBlur={() => {
               trigger("department");
+            }}
+          />
+        }
+      />
+      <FormControl
+        label="Colors"
+        placeholder="Enter your colors"
+        errorMessage={errors.colors?.message}
+        component={
+          <InputDropdown
+            isMulti
+            options={[
+              { value: "Blue", label: "Blue" },
+              { value: "Red", label: "Red" },
+              { value: "Green", label: "Green" },
+              { value: "Yellow", label: "Yellow" },
+              { value: "Purple", label: "Purple" },
+            ]}
+            onChange={(newValue) => {
+              setValue("colors", newValue as { value: string; label: string });
+            }}
+            onBlur={() => {
+              trigger("colors");
             }}
           />
         }
