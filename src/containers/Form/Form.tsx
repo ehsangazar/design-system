@@ -8,6 +8,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Alert from "../../components/Alert/Alert";
 import { IconJarLogoIcon } from "@radix-ui/react-icons";
+import InputTextArea from "../../components/InputTextArea/InputTextArea";
+import InputDropdown from "../../components/InputDropdown/InputDropdown";
 
 const schema = yup.object({
   firstName: yup.string().required("First name is required"),
@@ -20,6 +22,8 @@ const schema = yup.object({
     .string()
     .email("Must be a valid email")
     .required("Email is required"),
+  description: yup.string().required("Description is required"),
+  department: yup.string().required("Department is required"),
 });
 
 const Form = () => {
@@ -62,6 +66,34 @@ const Form = () => {
         errorMessage={errors.password?.message}
         component={<Input {...register("password")} />}
       />
+      <FormControl
+        label="Description"
+        placeholder="Enter your description"
+        errorMessage={errors.description?.message}
+        component={<InputTextArea {...register("description")} />}
+      />
+      <FormControl
+        label="Department"
+        placeholder="Enter your department"
+        errorMessage={errors.department?.message}
+        component={
+          <InputDropdown
+            options={[
+              { value: "chocolate", label: "Chocolate" },
+              { value: "strawberry", label: "Strawberry" },
+              { value: "vanilla", label: "Vanilla" },
+            ]}
+            onChange={(newValue) =>
+              register("department").onChange({
+                target: { value: (newValue as { value: string }).value },
+              })
+            }
+            onBlur={register("department").onBlur}
+            ref={register("department").ref}
+          />
+        }
+      />
+
       <Box pt={"2"}>
         <Alert.Root variant="soft" color="amber" size="2">
           <Alert.Icon>

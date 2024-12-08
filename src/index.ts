@@ -54,6 +54,7 @@ export { default as Tabs } from "./components/Tabs/Tabs";
 export { default as Text } from "./components/Text/Text";
 export { default as Input } from "./components/Input/Input";
 export { default as InputTextArea } from "./components/InputTextArea/InputTextArea";
+export { default as InputDropdown } from "./components/InputDropdown/InputDropdown";
 export { default as ThemeWrapper } from "./components/ThemeWrapper/ThemeWrapper";
 export { default as Tooltip } from "./components/Tooltip/Tooltip";
 export { default as ImageLazy } from "./components/ImageLazy/ImageLazy";
