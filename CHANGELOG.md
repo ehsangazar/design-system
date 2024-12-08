@@ -1,3 +1,10 @@
+# [1.48.0](https://github.com/ehsangazar/design-system/compare/v1.47.0...v1.48.0) (2024-12-08)
+
+
+### Features
+
+* add Colors field to Form with multi-select InputDropdown ([fe9fd70](https://github.com/ehsangazar/design-system/commit/fe9fd70b185cb6d9734058290098c391b0058091))
+
 # [1.47.0](https://github.com/ehsangazar/design-system/compare/v1.46.0...v1.47.0) (2024-12-08)
 
 
