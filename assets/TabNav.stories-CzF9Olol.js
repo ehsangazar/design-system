@@ -1,0 +1,19 @@
+import{j as r}from"./jsx-runtime-DATRzywu.js";import{l as v}from"./theme-panel-CSMZ4W-R.js";import"./avatar-D8EwA_Ua.js";import"./badge-WYd7FBhG.js";import"./blockquote-B1aX90yh.js";import"./box-dIRF3yzu.js";import"./button-DlIg2oA8.js";import"./card-DjmxA0G7.js";import"./checkbox-suhBuqXn.js";import"./code-BqqRhTy1.js";import"./container-CcvEL_10.js";import"./em-CgMa3jHa.js";import"./flex-DizmmxEJ.js";import"./grid-Cdmq7Oh9.js";import"./heading-C_4PyfHG.js";import"./icon-button-DlkbCCHS.js";import"./inset-ELfBekpL.js";import"./kbd-CbKaWsxS.js";import"./link-dHmBfXiH.js";import"./popover-DNDZvuPF.js";import"./progress-DxhZ2Cdb.js";import"./quote-DKy_mfZO.js";import"./radio-HH2KKyzX.js";import"./scroll-area-6v5qm58n.js";import"./separator-Bp8zJ2XE.js";import"./skeleton-HRpAQmjt.js";import"./slider-DJsaJPqC.js";import"./spinner-DhpBpra-.js";import"./strong-BbEtxIHs.js";import"./switch-BP-7dulp.js";import"./text-area-qoFm9yfp.js";import"./text-field-CB59ONGJ.js";import"./text-aCQFVNJJ.js";import"./theme-BRjMs0op.js";import"./tooltip-DWYHKP_J.js";import{C as T}from"./COLORS-z2Hurcq-.js";import"./index-DOYzD9QA.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-H1wMl_tP.js";import"./index-hsMOP9mU.js";import"./index-8yDGVWmJ.js";import"./index-DW48STyt.js";import"./index-CiphzMdQ.js";import"./extract-props-8lbMlImM.js";import"./as-child.prop-ByCI9gYn.js";import"./color.prop-Bz4j-_70.js";import"./high-contrast.prop-BhzBAZU8.js";import"./base-button-CBJ6VwA4.js";import"./radius.prop-1IxjFv-s.js";import"./index-BiRJhuWk.js";import"./index-DB_b48On.js";import"./index-D3Yvp5t9.js";import"./index-C5aZREpB.js";import"./margin.props-DI7zkkCN.js";import"./index-Dc3Ir2cb.js";import"./index-CTg5oan3.js";import"./layout.props-B2ZFvd41.js";import"./padding.props-BDtdWJAm.js";import"./index-BhWjwwOa.js";import"./index-kb0X7lFJ.js";import"./index-BdQq_4o_.js";import"./get-subtree-OsBVLi08.js";import"./truncate.prop-DhqNRCQA.js";import"./weight.prop-DAtMV9Xl.js";import"./flex.props-CpwMsmsJ.js";import"./gap.props-Dam2lYud.js";import"./floating-ui.dom-D0xtKlXs.js";const o=v,y=S=>r.jsxs(o.Root,{...S,children:[r.jsx(o.Link,{href:"#",active:!0,children:"Account"}),r.jsx(o.Link,{href:"#",children:"Documents"}),r.jsx(o.Link,{href:"#",children:"Settings"})]}),Br={title:"Components/TabNav",component:y,argTypes:{size:{control:"select",options:["1","2"]},wrap:{control:"select",options:["nowrap","wrap","wrap-reverse"]},justify:{control:"select",options:["start","center","end"]},highContrast:{control:"boolean"},color:{control:"select",options:T}}},t={args:{}},e={args:{highContrast:!0}},p={args:{wrap:"wrap"}},i={args:{justify:"center"}},s={args:{color:"blue"}};var m,a,n;t.parameters={...t.parameters,docs:{...(m=t.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  args: {}
+}`,...(n=(a=t.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};var c,u,l;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  args: {
+    highContrast: true
+  }
+}`,...(l=(u=e.parameters)==null?void 0:u.docs)==null?void 0:l.source}}};var d,g,h;p.parameters={...p.parameters,docs:{...(d=p.parameters)==null?void 0:d.docs,source:{originalSource:`{
+  args: {
+    wrap: "wrap"
+  }
+}`,...(h=(g=p.parameters)==null?void 0:g.docs)==null?void 0:h.source}}};var C,f,j;i.parameters={...i.parameters,docs:{...(C=i.parameters)==null?void 0:C.docs,source:{originalSource:`{
+  args: {
+    justify: "center"
+  }
+}`,...(j=(f=i.parameters)==null?void 0:f.docs)==null?void 0:j.source}}};var x,w,b;s.parameters={...s.parameters,docs:{...(x=s.parameters)==null?void 0:x.docs,source:{originalSource:`{
+  args: {
+    color: "blue"
+  }
+}`,...(b=(w=s.parameters)==null?void 0:w.docs)==null?void 0:b.source}}};const Fr=["Default","HighContrast","Wrapped","Centered","CustomColor"];export{i as Centered,s as CustomColor,t as Default,e as HighContrast,p as Wrapped,Fr as __namedExportsOrder,Br as default};

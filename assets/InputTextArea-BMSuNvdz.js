@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime-DATRzywu.js";import{e}from"./index-DOYzD9QA.js";import{r as m}from"./text-area-qoFm9yfp.js";const p=e.forwardRef((r,o)=>t.jsx(m,{ref:o,...r}));p.__docgenInfo={description:"",methods:[],displayName:"InputTextArea"};export{p as I};

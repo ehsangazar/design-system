@@ -1,0 +1,5 @@
+import{I as a}from"./ImageLazy-D20aUnix.js";import"./jsx-runtime-DATRzywu.js";import"./index-DOYzD9QA.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./Box-B6uAxP2q.js";import"./box-dIRF3yzu.js";import"./index-H1wMl_tP.js";import"./index-CiphzMdQ.js";import"./index-8yDGVWmJ.js";import"./as-child.prop-ByCI9gYn.js";import"./extract-props-8lbMlImM.js";import"./layout.props-B2ZFvd41.js";import"./padding.props-BDtdWJAm.js";import"./margin.props-DI7zkkCN.js";import"./borderRadiusHandler-CFXOe0Qa.js";const y={component:a,argTypes:{src:{control:"text"},radius:{control:"select",options:["none","small","medium","large","full"]},fallbackSrc:{control:"text"},defaultIsVisible:{control:"boolean"},alt:{control:"text"},className:{control:"text"}},parameters:{docs:{description:{component:"ImageLazy"}}}},o={args:{src:"https://via.placeholder.com/600"}};var t,r,e;o.parameters={...o.parameters,docs:{...(t=o.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {
+    src: "https://via.placeholder.com/600"
+  }
+}`,...(e=(r=o.parameters)==null?void 0:r.docs)==null?void 0:e.source}}};const v=["Default"];export{o as Default,v as __namedExportsOrder,y as default};
