@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import InputDropdown from "./InputDropdown";
+import Box from "../Box/Box";
 
 const meta: Meta<typeof InputDropdown> = {
   component: InputDropdown,
@@ -51,4 +52,9 @@ export const Default: Story = {
       { value: "vanilla", label: "Van illa" },
     ],
   },
+  render: (args) => (
+    <Box minHeight={"400px"}>
+      <InputDropdown {...args} />
+    </Box>
+  ),
 };
