@@ -42,12 +42,13 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Deploy To Github Pages
         run: |
-          touch ./storybook-static/.nojekyll
-          npx storybook-to-ghpages --existing-output-dir=storybook-static --remote-url=https://${{ secrets.GH_TOKEN }}@github.com/ehsangazar/design-system.git
+          npm run storybook:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
