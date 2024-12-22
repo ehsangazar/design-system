@@ -28,3 +28,4 @@ dist-ssr
 storybook-static
 .out
 nohup.out
+coverage

@@ -21,7 +21,7 @@
     "test:storybook": "chromatic --project-token <your-project-token>",
     "test:unit": "jest --coverage",
     "storybook:kill": "kill $(lsof -t -i:6006)",
-    "storybook:test": "test-storybook",
+    "storybook:test": "test-storybook $(find src -type f -regex '.*/[A-D][A-Za-z0-9_-]*.stories.[tj]sx$')",
     "storybook:package": "tsc -b && vite build --config vite.config.package.ts",
     "storybook:deploy": "storybook-to-ghpages --existing-output-dir=storybook-static",
     "storybook:build": "storybook build",
