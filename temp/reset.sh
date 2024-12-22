@@ -3,5 +3,5 @@ rm -rf dist
 rm -rf coverage
 rm -rf package-lock.json
 npm cache clean --force
-npm install
+npm install -f
 npm install rollup@latest
