@@ -15,16 +15,17 @@
     "preview": "vite preview",
     "dev": "vite",
     "storybook": "storybook dev -p 6006",
-    "build:package:tsup": "node --max-old-space-size=8192 ./node_modules/.bin/tsup --config tsup.config.ts",
     "build:package": "tsc -b && vite build --config vite.config.package.ts",
     "build": "tsc -b && vite build",
-    "build:storybook": "storybook build -o .out",
+    "start:storybook": "storybook start -p 6006",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test:storybook": "chromatic --project-token <your-project-token>",
     "test-storybook": "test-storybook",
     "test:unit": "jest --coverage",
-    "deploy:storybook": "storybook-to-ghpages --existing-output-dir=.out"
+    "storybook:deploy": "storybook-to-ghpages --existing-output-dir=storybook-static",
+    "storybook:build": "storybook build",
+    "storybook:publish": "npm run storybook:build && touch ./storybook-static/.nojekyll && npm run storybook:deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -40,7 +41,6 @@
     "react-hook-form": "^7.54.0",
     "react-select": "^5.8.3",
     "react-toastify": "^10.0.6",
-    "tsup": "^8.3.5",
     "vite-plugin-dts": "^4.3.0",
     "yup": "^1.5.0"
   },
