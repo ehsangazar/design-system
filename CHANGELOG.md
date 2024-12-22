@@ -1,3 +1,10 @@
+## [1.52.1](https://github.com/ehsangazar/design-system/compare/v1.52.0...v1.52.1) (2024-12-22)
+
+
+### Bug Fixes
+
+* remove Git user configuration steps from GitHub Actions workflow ([0bd884b](https://github.com/ehsangazar/design-system/commit/0bd884b007ecb788e6929354d314d6d2605390b7))
+
 # [1.52.0](https://github.com/ehsangazar/design-system/compare/v1.51.0...v1.52.0) (2024-12-22)
 
 
