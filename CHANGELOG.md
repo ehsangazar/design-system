@@ -1,3 +1,33 @@
+# [1.52.0](https://github.com/ehsangazar/design-system/compare/v1.51.0...v1.52.0) (2024-12-22)
+
+
+### Bug Fixes
+
+* correct typo in Storybook start script from 'nohub' to 'nohup' ([178acd3](https://github.com/ehsangazar/design-system/commit/178acd3398411cf9231db8b786813781c4724e03))
+* enable verbose output for Storybook tests in publish workflow ([43dbdda](https://github.com/ehsangazar/design-system/commit/43dbdda4db8715af3c594a99ef47a427bc8509f2))
+* increase sleep duration for Storybook startup and update test command for CI ([670531f](https://github.com/ehsangazar/design-system/commit/670531f822aa2bf1d0e459495df79bba8af87988))
+* reduce sleep duration for Storybook startup and add global test function for Jest ([a577d09](https://github.com/ehsangazar/design-system/commit/a577d09233127c5138c976a8fca3d7204b0bb64e))
+* remove unnecessary Storybook kill step from GitHub Actions workflow ([8fc4639](https://github.com/ehsangazar/design-system/commit/8fc4639076607429b290dbac9d2ca6fd1cc96ecb))
+* remove verbose flag from Storybook test command and update .gitignore for coverage ([7dc83df](https://github.com/ehsangazar/design-system/commit/7dc83df78474cd63d44c889fb3d36f8a0ca184dd))
+* specify Input type for FormControl component prop ([b2d9efd](https://github.com/ehsangazar/design-system/commit/b2d9efd696b1e4ce7b536fba8f470d0a8a03c50d))
+* update FormControl component prop to accept additional input attributes ([6c52fdf](https://github.com/ehsangazar/design-system/commit/6c52fdfd8b3f408ac5a3feea3687cd684fb751f9))
+* update GitHub Actions workflow to remove Playwright installation and Storybook server startup ([f630ba8](https://github.com/ehsangazar/design-system/commit/f630ba81251b5c95758eccd46bf1a437f4e9f008))
+* update storybook test command to include specific story files ([3a2d5ab](https://github.com/ehsangazar/design-system/commit/3a2d5ab4d36cb205006e1a2640d3d0ae5f0051d7))
+
+
+### Features
+
+* add Playwright browser installation step in publish workflow ([ae99261](https://github.com/ehsangazar/design-system/commit/ae99261e29a382aa263e8b464e1ff472dbc04ee3))
+* enhance GitHub Actions workflow for Storybook with build, test, and server management ([47750d5](https://github.com/ehsangazar/design-system/commit/47750d572105e98ce50e27cda198662f4ee3fd0e))
+* enhance InputDropdown stories with Box wrapper and update package scripts ([95aa109](https://github.com/ehsangazar/design-system/commit/95aa1094b705a78ad06cb30d0f0d70c5cb2927fc))
+* enhance publish workflow with Playwright browser installation and Storybook management ([c6e065b](https://github.com/ehsangazar/design-system/commit/c6e065b602b2d245e1c9927860a0aa14060162ea))
+* update pre-push hook to run Storybook package build ([901d316](https://github.com/ehsangazar/design-system/commit/901d3166d39279f852efb9c0b33d1190e22dfc25))
+* update publish workflow to set Git user config and streamline Storybook build process ([bb92451](https://github.com/ehsangazar/design-system/commit/bb92451bbabf088f36c4c176af6dd3f09c673483))
+* update publish workflow to start Storybook server in the background ([7af7e5c](https://github.com/ehsangazar/design-system/commit/7af7e5cde29b578f7e4f448c02152b22238e9d69))
+* update Storybook configuration and deployment scripts; remove tsup config ([2498cb0](https://github.com/ehsangazar/design-system/commit/2498cb0c2ee21aa13e27b7f07b80510e812ef7a1))
+* update Storybook start script to use 'dev' command ([1771151](https://github.com/ehsangazar/design-system/commit/17711511f1d7675862b09c830a329c769058a59f))
+* update Storybook start script to use 'nohub' for background execution ([3ef7992](https://github.com/ehsangazar/design-system/commit/3ef7992f23f46d9abb97a94aec3032b2e01638aa))
+
 # [1.51.0](https://github.com/ehsangazar/design-system/compare/v1.50.0...v1.51.0) (2024-12-08)
 
 
