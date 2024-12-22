@@ -1,0 +1,98 @@
+
+> @ehsangazar/design-system@0.0.2 storybook
+> storybook dev -p 6006 6006
+
+@storybook/core v8.4.7
+
+WARN The following packages are incompatible with Storybook 8.4.7 as they depend on different major versions of Storybook packages:
+WARN - @storybook/addon-storyshots@7.6.20
+WARN  Repo: https://github.com/storybookjs/storybook/tree/next/code/addons/storyshots-core
+WARN 
+WARN 
+WARN Please consider updating your packages or contacting the maintainers for compatibility details.
+WARN For more on Storybook 8 compatibility, see the linked GitHub issue:
+WARN https://github.com/storybookjs/storybook/issues/26031
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info => Starting manager..
+info => Starting preview..
+info Using tsconfig paths for react-docgen
+╭────────────────────────────────────────────────────╮
+│                                                    │
+│   [38;2;162;224;94mStorybook 8.4.7 for react-vite started[39m           │
+│   293 ms for manager and 876 ms for preview        │
+│                                                    │
+│    Local:            http://localhost:6006/        │
+│    On your network:  http://10.136.107.18:6006/    │
+│                                                    │
+╰────────────────────────────────────────────────────╯
+
+> @ehsangazar/design-system@0.0.2 storybook
+> storybook dev -p 6006 6006
+
+@storybook/core v8.4.7
+
+WARN The following packages are incompatible with Storybook 8.4.7 as they depend on different major versions of Storybook packages:
+WARN - @storybook/addon-storyshots@7.6.20
+WARN  Repo: https://github.com/storybookjs/storybook/tree/next/code/addons/storyshots-core
+WARN 
+WARN 
+WARN Please consider updating your packages or contacting the maintainers for compatibility details.
+WARN For more on Storybook 8 compatibility, see the linked GitHub issue:
+WARN https://github.com/storybookjs/storybook/issues/26031
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info => Starting manager..
+info => Starting preview..
+info Using tsconfig paths for react-docgen
+╭────────────────────────────────────────────────────╮
+│                                                    │
+│   [38;2;162;224;94mStorybook 8.4.7 for react-vite started[39m           │
+│   465 ms for manager and 483 ms for preview        │
+│                                                    │
+│    Local:            http://localhost:6006/        │
+│    On your network:  http://10.136.107.18:6006/    │
+│                                                    │
+╰────────────────────────────────────────────────────╯
+00:10:04 [vite] (client) ✨ new dependencies optimized: @storybook/react/dist/entry-preview.mjs, @storybook/react/dist/entry-preview-docs.mjs, @storybook/addon-essentials/docs/preview, @storybook/addon-essentials/actions/preview, @storybook/addon-essentials/viewport/preview, @storybook/addon-essentials/measure/preview, @storybook/addon-essentials/outline/preview, @storybook/addon-essentials/highlight/preview, @storybook/addon-interactions/preview, @storybook/addon-a11y/preview, @storybook/addon-backgrounds/preview
+00:10:04 [vite] (client) ✨ optimized dependencies changed. reloading
+00:10:05 [vite] (client) ✨ new dependencies optimized: color2k
+00:10:05 [vite] (client) ✨ optimized dependencies changed. reloading
+
+> @ehsangazar/design-system@0.0.2 storybook
+> storybook dev -p 6006 6006
+
+@storybook/core v8.4.7
+
+WARN The following packages are incompatible with Storybook 8.4.7 as they depend on different major versions of Storybook packages:
+WARN - @storybook/addon-storyshots@7.6.20
+WARN  Repo: https://github.com/storybookjs/storybook/tree/next/code/addons/storyshots-core
+WARN 
+WARN 
+WARN Please consider updating your packages or contacting the maintainers for compatibility details.
+WARN For more on Storybook 8 compatibility, see the linked GitHub issue:
+WARN https://github.com/storybookjs/storybook/issues/26031
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info Found existing addon "@storybook/addon-backgrounds", skipping.
+info => Starting manager..
+info => Starting preview..
+info Using tsconfig paths for react-docgen
+╭────────────────────────────────────────────────────╮
+│                                                    │
+│   [38;2;162;224;94mStorybook 8.4.7 for react-vite started[39m           │
+│   310 ms for manager and 576 ms for preview        │
+│                                                    │
+│    Local:            http://localhost:6006/        │
+│    On your network:  http://10.136.107.18:6006/    │
+│                                                    │
+╰────────────────────────────────────────────────────╯
+00:16:15 [vite] changed tsconfig file detected: /Users/gaz.ehsan/Personals/design-system/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+00:16:20 [vite] changed tsconfig file detected: /Users/gaz.ehsan/Personals/design-system/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+00:16:23 [vite] changed tsconfig file detected: /Users/gaz.ehsan/Personals/design-system/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+00:16:44 [vite] changed tsconfig file detected: /Users/gaz.ehsan/Personals/design-system/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+00:17:58 [vite] (client) page reload src/components/Avatar/Avatar.tsx
+00:18:01 [vite] (client) page reload src/components/Avatar/Avatar.tsx
+00:18:06 [vite] (client) page reload src/components/Avatar/Avatar.tsx
+00:18:07 [vite] (client) page reload src/components/Avatar/Avatar.stories.tsx
+00:18:25 [vite] (client) page reload coverage/lcov-report/index.html
+00:18:25 [vite] (ssr) page reload coverage/lcov-report/index.html

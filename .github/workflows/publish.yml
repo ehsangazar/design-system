@@ -25,8 +25,25 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
+      - name: Build Storybook
+        run: |
+          npm run storybook:build
+
+      - name: Start Storybook server
+        run: |
+          nohup npm run storybook --port 6006 &  # Start Storybook in the background
+          sleep 10  # Wait a bit for Storybook to fully start
+
+      - name: Run Storybook tests
+        run: |
+          npm run storybook:test
+
+      - name: Stop Storybook server
+        run: |
+          kill $(lsof -t -i:6006)  # Kill the Storybook server
+
       - name: Build package
-        run: npm run build:package
+        run: npm run storybook:package
 
       - name: Verify npm token
         run: |
