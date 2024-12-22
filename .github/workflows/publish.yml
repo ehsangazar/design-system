@@ -38,9 +38,10 @@ jobs:
         run: |
           npm run storybook:build
 
-      - name: Run Storybook
+      - name: Start Storybook server
         run: |
-          npm run storybook:start
+          nohup npm run storybook --port 6006 &  # Start Storybook in the background
+          sleep 10  # Wait a bit for Storybook to fully start
 
       - name: Run Playwright tests
         run: |

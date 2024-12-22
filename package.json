@@ -20,7 +20,6 @@
     "lint:fix": "eslint --fix .",
     "test:storybook": "chromatic --project-token <your-project-token>",
     "test:unit": "jest --coverage",
-    "storybook:start": "nohup npm run storybook",
     "storybook:kill": "kill $(lsof -t -i:6006)",
     "storybook:test": "test-storybook",
     "storybook:package": "tsc -b && vite build --config vite.config.package.ts",
