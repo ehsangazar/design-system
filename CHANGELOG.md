@@ -1,3 +1,10 @@
+## [1.52.2](https://github.com/ehsangazar/design-system/compare/v1.52.1...v1.52.2) (2024-12-22)
+
+
+### Bug Fixes
+
+* streamline command in GitHub Actions workflow for deploying to GitHub Pages ([d88c330](https://github.com/ehsangazar/design-system/commit/d88c330fafaacb5db9b28da37c636e36a30ef78a))
+
 ## [1.52.1](https://github.com/ehsangazar/design-system/compare/v1.52.0...v1.52.1) (2024-12-22)
 
 
