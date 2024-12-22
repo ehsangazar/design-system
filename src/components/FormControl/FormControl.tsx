@@ -7,7 +7,11 @@ import Input from "../Input/Input";
 
 interface FormControlProps {
   label: string;
-  component: React.ReactElement<typeof Input>;
+  component: React.ReactElement<{
+    type?: string;
+    placeholder?: string;
+    defaultValue?: string;
+  }>;
   placeholder?: string;
   defaultValue?: string;
   type?: string;
@@ -27,6 +31,7 @@ const FormControl: React.FC<FormControlProps> = ({
       <Label>{label}</Label>
       <Box>
         {React.cloneElement(component as React.ReactElement, {
+          // @ts-expect-error-next-line
           type,
           placeholder,
           defaultValue,
