@@ -1,3 +1,10 @@
+## [1.52.3](https://github.com/ehsangazar/design-system/compare/v1.52.2...v1.52.3) (2024-12-22)
+
+
+### Bug Fixes
+
+* update GitHub Actions workflow for storybook deployment and add publish script ([bc574b1](https://github.com/ehsangazar/design-system/commit/bc574b10f52321a2d878cd4a314b56becff15903))
+
 ## [1.52.2](https://github.com/ehsangazar/design-system/compare/v1.52.1...v1.52.2) (2024-12-22)
 
 
