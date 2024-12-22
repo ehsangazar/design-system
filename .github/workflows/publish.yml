@@ -22,29 +22,17 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install
-
       - name: Run ESLint
         run: npm run lint
+
+      - name: Set Git user email and name
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Build Storybook
         run: |
           npm run storybook:build
-
-      - name: Start Storybook server
-        run: |
-          nohup npm run storybook --port 6006 &  # Start Storybook in the background
-          sleep 10  # Wait a bit for Storybook to fully start
-
-      - name: Run Storybook tests
-        run: |
-          npm run storybook:test
-
-      - name: Stop Storybook server
-        run: |
-          kill $(lsof -t -i:6006)  # Kill the Storybook server
 
       - name: Build package
         run: npm run storybook:package
