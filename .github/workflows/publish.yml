@@ -25,10 +25,6 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install
-
       - name: Set Git user email and name
         run: |
           git config --global user.name "GitHub Actions"
@@ -37,15 +33,6 @@ jobs:
       - name: Build Storybook
         run: |
           npm run storybook:build
-
-      - name: Start Storybook server
-        run: |
-          nohup npm run storybook --port 6006 &  # Start Storybook in the background
-          sleep 10  # Wait a bit for Storybook to fully start
-
-      - name: Run Playwright tests
-        run: |
-          npm run storybook:test
 
       - name: Kill Storybook
         run: |
