@@ -45,7 +45,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
-          npm run storybook:test
+          npm run storybook:test -- --verbose
 
       - name: Kill Storybook
         run: |
