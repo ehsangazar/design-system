@@ -7,7 +7,7 @@ import Input from "../Input/Input";
 
 interface FormControlProps {
   label: string;
-  component: React.ReactElement;
+  component: React.ReactElement<typeof Input>;
   placeholder?: string;
   defaultValue?: string;
   type?: string;
