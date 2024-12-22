@@ -45,7 +45,10 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Deploy To Github Pages
-        run: npm run storybook:publish
+        run: |
+          touch ./storybook-static/.nojekyll
+          npx storybook-to-ghpages --existing-output-dir=storybook-static \
+    --remote-url=https://${{ secrets.GH_TOKEN }}@github.com/ehsangazar/design-system.git
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
