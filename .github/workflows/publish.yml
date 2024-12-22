@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Install Playwright browsers
+        run: |
+          npx playwright install
+
       - name: Run ESLint
         run: npm run lint
 
