@@ -34,10 +34,6 @@ jobs:
         run: |
           npm run storybook:build
 
-      - name: Kill Storybook
-        run: |
-          npm run storybook:kill
-
       - name: Build package
         run: npm run storybook:package
 
