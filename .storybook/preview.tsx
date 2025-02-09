@@ -2,7 +2,6 @@ import React from "react";
 import type { Preview } from "@storybook/react";
 import ThemeWrapper from "../src/components/ThemeWrapper/ThemeWrapper";
 import "./styles.css";
-import "./custom.css";
 
 export const globalTypes = {
   theme: {
