@@ -1,0 +1,56 @@
+:root,
+.light,
+.light-theme {
+    --indigo-1: #1f1111;
+    --indigo-2: #261414;
+    --indigo-3: #491818;
+    --indigo-4: #621d1d;
+    --indigo-5: #742525;
+    --indigo-6: #843030;
+    --indigo-7: #973a3a;
+    --indigo-8: #b14343;
+    --indigo-9: #dd3e3e;
+    --indigo-10: #e45454;
+    --indigo-11: #ff9e9e;
+    --indigo-12: #ffd6d6;
+    --indigo-a1: #ff11110f;
+    --indigo-a2: #fa333317;
+    --indigo-a3: #ff2f2f3c;
+    --indigo-a4: #ff353557;
+    --indigo-a5: #fd41416b;
+    --indigo-a6: #fd51517c;
+    --indigo-a7: #ff5a5a90;
+    --indigo-a8: #fe5b5bac;
+    --indigo-a9: #ff4646db;
+    --indigo-a10: #fe5c5ce3;
+    --indigo-a11: #ff9e9e;
+    --indigo-a12: #ffd6d6;
+}
+
+.dark,
+.dark-theme {
+    --indigo-1: #1f1111;
+    --indigo-2: #261414;
+    --indigo-3: #491818;
+    --indigo-4: #621d1d;
+    --indigo-5: #742525;
+    --indigo-6: #843030;
+    --indigo-7: #973a3a;
+    --indigo-8: #b14343;
+    --indigo-9: #dd3e3e;
+    --indigo-10: #e45454;
+    --indigo-11: #ff9e9e;
+    --indigo-12: #ffd6d6;
+    --indigo-a1: #ff11110f;
+    --indigo-a2: #fa333317;
+    --indigo-a3: #ff2f2f3c;
+    --indigo-a4: #ff353557;
+    --indigo-a5: #fd41416b;
+    --indigo-a6: #fd51517c;
+    --indigo-a7: #ff5a5a90;
+    --indigo-a8: #fe5b5bac;
+    --indigo-a9: #ff4646db;
+    --indigo-a10: #fe5c5ce3;
+    --indigo-a11: #ff9e9e;
+    --indigo-a12: #ffd6d6;
+}

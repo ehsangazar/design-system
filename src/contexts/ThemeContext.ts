@@ -1,11 +1,10 @@
 import { createContext } from "react";
-import { defaultColors, Theme } from "../components/ThemeWrapper/ThemeWrapper";
+import { Theme } from "../components/ThemeWrapper/ThemeWrapper";
 import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
 import { ToastPosition } from "react-toastify";
 
 const ThemeContext = createContext<{
   theme: Theme;
-  colors: Partial<Record<keyof typeof defaultColors, string>>;
   typography?: Record<
     string,
     {
@@ -19,7 +18,6 @@ const ThemeContext = createContext<{
   };
 }>({
   theme: {},
-  colors: {},
   typography: {},
   toastConfig: {
     autoClose: 5000,

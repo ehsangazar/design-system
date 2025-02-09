@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { Theme as RadixTheme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
-import { generateShades } from "./generateShades";
 import ThemeContext from "../../contexts/ThemeContext";
 import { Responsive } from "@radix-ui/themes/dist/cjs/props/prop-def";
 import "./global.css";
@@ -66,37 +65,6 @@ const defaultTheme: Theme = {
   },
 };
 
-export const defaultColors = {
-  gray: "#8D8D8D",
-  gold: "#FFC700",
-  bronze: "#C87533",
-  brown: "#8B5A2B",
-  yellow: "#FFEB3B",
-  amber: "#FFBF30",
-  orange: "#FF8C00",
-  tomato: "#E54D2E",
-  red: "#E5484D",
-  ruby: "#E54666",
-  crimson: "#E93D82",
-  pink: "#D6409F",
-  plum: "#BA68C8",
-  purple: "#8E4EC6",
-  violet: "#6E56CF",
-  iris: "#5B5BD6",
-  indigo: "#4A0072",
-  blue: "#2979FF",
-  cyan: "#00A2C7",
-  teal: "#00897B",
-  jade: "#00A676",
-  green: "#43A047",
-  grass: "#66BB6A",
-  sage: "#868E8B",
-  olive: "#898E87",
-  sand: "#8D8D86",
-  slate: "#8B8D98",
-  mauve: "#8E8C99",
-};
-
 export const defaultTypography: Record<
   string,
   {
@@ -141,13 +109,11 @@ const defaultToastConfig = {
 const ThemeWrapper = ({
   children,
   customTheme,
-  customColors,
   customTypography,
   customToastConfig,
 }: {
   children: ReactNode;
   customTheme?: Theme;
-  customColors?: Partial<Record<keyof typeof defaultColors, string>>;
   customTypography?: Record<
     string,
     {
@@ -161,18 +127,6 @@ const ThemeWrapper = ({
   };
 }) => {
   const theme: Theme = { ...defaultTheme, ...customTheme };
-  const colors = { ...defaultColors, ...customColors };
-
-  const style: { [key: string]: string } = Object.keys(colors).reduce(
-    (acc, colorName) => {
-      const key = colorName as keyof typeof defaultColors;
-      return {
-        ...acc,
-        ...generateShades(colorName, colors[key]),
-      };
-    },
-    {}
-  );
 
   const typography = { ...defaultTypography, ...customTypography };
 
@@ -182,12 +136,11 @@ const ThemeWrapper = ({
     <ThemeContext.Provider
       value={{
         theme,
-        colors,
         typography,
         toastConfig,
       }}
     >
-      <div className="ThemeWrapper" style={style}>
+      <div className="ThemeWrapper">
         <RadixTheme {...theme}>{children}</RadixTheme>
       </div>
       <ToastContainer
