@@ -1,3 +1,15 @@
+# [1.53.0](https://github.com/ehsangazar/design-system/compare/v1.52.3...v1.53.0) (2025-02-09)
+
+
+### Bug Fixes
+
+* remove unused custom CSS import from Storybook preview ([f0e804b](https://github.com/ehsangazar/design-system/commit/f0e804b8a509fea6213d856aa61aaf139988db4f))
+
+
+### Features
+
+* enhance ThemeWrapper with custom CSS and indigo theme support; remove unused color generation logic ([5ee0b15](https://github.com/ehsangazar/design-system/commit/5ee0b15b9d5c628044a89bc40c1a3bed8c7e11b1))
+
 ## [1.52.3](https://github.com/ehsangazar/design-system/compare/v1.52.2...v1.52.3) (2024-12-22)
 
 
