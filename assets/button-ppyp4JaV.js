@@ -1,0 +1,1 @@
+import{r}from"./index-DOYzD9QA.js";import{y as a}from"./index-H1wMl_tP.js";import{n as m}from"./base-button--__V3Yc6.js";const s=r.forwardRef(({className:t,...o},e)=>r.createElement(m,{...o,ref:e,className:a("rt-Button",t)}));s.displayName="Button";export{s as o};
